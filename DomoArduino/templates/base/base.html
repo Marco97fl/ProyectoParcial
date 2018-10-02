@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+{% load static %}
+{% block head %}
+
+	<meta charset="UTF-8">
+	<title>{% block title %} Soy el titulo de la Pagina {% endblock %}</title>
+
+{% endblock %}
+</head>
+
+
+<body>
+	<header id="header">
+	{% block header %}
+		Soy el encabezado de la pagina
+		<nav>
+			<ul>
+				<li><a href="#"></a>Seguridad</li>
+				<li><a href="#"></a>Confort</li>
+				<li><a href="#"></a>Ocio</li>
+				<li><a href="#"></a>Contactenos</li>
+			</ul>
+		</nav>
+	{% endblock %}
+	</header>
+	
+	<div class="content">
+	{% block content %}
+		Aqui va el contenido de la pagina
+	{% endblock %}
+	</div>
+	
+	<footer>
+	{% block footer %}
+	<div class="content">
+		Todos los derechos reservados ©. DomoArduino 2018
+	</div>
+	{% endblock %}
+	</footer>
+
+</body>
+</html>

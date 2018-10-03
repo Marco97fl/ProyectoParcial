@@ -1,5 +1,5 @@
 from django.conf.urls import url, include
-from apps.arduino.views import Vista
+from arduino.views import Vista
 
 app_name="arduino"
 urlpatterns = [ 

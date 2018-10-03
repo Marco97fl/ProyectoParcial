@@ -19,5 +19,5 @@ from django.conf.urls import url, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^prueba/', include('apps.arduino.urls', namespace="basehtml")),
+    url(r'^prueba/', include('arduino.urls', namespace="basehtml")),
 ]

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+{% load static %}
+{% block head %}
+
+	<meta charset="UTF-8">
+	<title>{% block title %} Soy el titulo de la Pagina {% endblock %}</title>
+
+{% endblock %}	
+
+<style type="text/css" media="screen">
+    *{
+		padding: 0px;
+		margin: 0px;
+    }
+
+	#header
+	{
+		background: rgba(0,0,0,0.9);
+		width: 100%;
+		position: fixed;
+		z-index: 100;
+		margin:auto;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.nav
+	{
+		float: left;
+	}
+
+	.nav ul
+	{
+		list-style: none;
+		overflow: hidden;
+	}
+
+	.nav ul li 
+	{
+		float: left;
+		font-family: Arial, sans-serif;
+		font-size: 16px;
+	}
+
+	.nav ul li a 
+	{
+		display: block; 
+		padding: 20px;
+		color: #fff;
+		text-decoration: none;
+	}
+		 
+	.nav ul li:hover 
+	{
+		background: #3ead47;
+	}
+
+	ul, ol
+	{
+		list-style: none;
+
+	}
+
+	.nav li a 
+	{
+		background-color: #000;
+		color:#fff;
+		text-decoration: none;
+		padding: 16px 15px;
+		display: block;
+	}
+
+	.nav li a:hover
+	{
+		background-color: #3ead47;
+	}
+
+	.nav > li 
+	{
+		float: left;
+	}
+
+	.nav li ul
+	{
+		display: none;
+		position: absolute;
+		min-width: 140px;
+	}
+
+	.nav li:hover >ul
+	{
+		display: block;
+	}
+
+	.content 
+	{
+	  	padding-top: 60px;
+	}	
+</style>
+
+</head>
+
+<body>
+	<header id="header">
+		<nav>
+			<ul class="nav">
+				<li><a href="#">Seguridad</a>
+					<ul>
+						<li><a href="#">Paso a paso</a></li>
+					</ul>
+				</li>
+
+				<li><a href="#">Confort</a>
+					<ul>
+						<li><a href="#">Paso a paso</a></li>
+					</ul>
+				</li>
+
+				<li><a href="#">Ocio</a>
+					<ul>
+						<li><a href="#">Paso a paso</a></li>
+					</ul>
+				</li>
+
+				<li><a href="#">Contactenos</a></li>
+			</ul>
+		</nav>
+	{% block header %}
+		Soy el encabezado de la pagina
+		
+	{% endblock %}
+	</header>
+	
+	<div class="content">
+	{% block content %}
+
+		Este es el Contenido de la pagina
+
+	{% endblock %}
+	</div>
+	
+	<footer>
+	{% block footer %}
+	<div class="content">
+		Todos los derechos reservados ©. DomoArduino 2018
+	</div>
+	{% endblock %}
+	</footer>
+
+</body>
+</html>

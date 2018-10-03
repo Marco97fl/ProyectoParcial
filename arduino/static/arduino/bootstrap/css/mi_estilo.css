@@ -1,0 +1,22 @@
+input,texarea,select
+{ 
+	max-width: 280px; 
+} 
+.navbar
+{ 
+	margin-bottom: 1px; 
+} 
+body{ } 
+.jumbotron
+{ 
+	margin-left: 5px; 
+	margin-right: 5px; 
+	padding-top: 5px; 
+	padding-bottom: 5px; 
+	border-radius: 10px; 
+	text-align: center; 
+} 
+.navbar-header-background
+{ 
+	background: black; 
+}

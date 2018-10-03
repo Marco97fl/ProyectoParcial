@@ -1,1 +1,1 @@
-web: gunicorn ProyectoParcial.wsgi --log-file -
+web: gunicorn DomoArduino.wsgi --log-file -

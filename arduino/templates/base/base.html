@@ -1,79 +1,167 @@
-<!DOCTYPE html>
-<html lang="es">
+{% load static from staticfiles %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 {% load static %}
 {% block head %}
 
-	<meta charset="UTF-8">
-	<title>{% block title %} Domo Arduino {% endblock %}</title>
+  <meta charset="UTF-8">
 
-{% endblock %}	
+  <meta property="og:title" content="Domo Arduino"/>
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://domoarduino.herokuapp.com/" />
+  <meta property="og:description" content="Pagina que ofrece informacion de tecnologias creadas con arduino para hacer nuestra casa mas tecnologica."/>
+  <meta property="og:image" content="http://www.mediafire.com/view/tcq6m9qc9ecafa1/logo_oficial.png"/>
+  <title>{% block title %} Domo Arduino {% endblock %}</title>
+
+{% endblock %}
+<link rel="icon" type="image/png" href="{% static 'admin/img/logo_oficial.ico' %}"/>  
 <link rel="stylesheet" href="{% static 'admin/css/estilos.css' %}">
+
 <script type="text/javascript">
-	function myFunction() {
-   	if(document.getElementById("cbox").checked){
-   			document.getElementsByTagName("body")[0].style.backgroundColor = "#212f3c";
+  function myFunction() {
+    if(document.getElementById("cbox").checked){
+        document.getElementsByTagName("body")[0].style.backgroundColor = "#212f3c";
    }
    else{
-   	location.reload(); 
+    location.reload(); 
    }
-}	 
+}  
 </script>
+
 </head>
-
-<body>
-	<header id="header">
-		<nav>
-			<ul class="nav">
-				<li><a href="#">Seguridad</a>
-					<ul>
-						<li><a href="#">Paso a paso</a></li>
-					</ul>
-				</li>
-
-				<li><a href="#">Confort</a>
-					<ul>
-						<li><a href="#">Paso a paso</a></li>
-					</ul>
-				</li>
-
-				<li><a href="#">Ocio</a>
-					<ul>
-						<li><a href="#">Paso a paso</a></li>
-					</ul>
-				</li>
-
-				<li><a href="#">Contactenos</a></li>
-			</ul>
-		</nav>
-	{% block header %}
-
-		Soy el encabezado de la pagina
-		
-	{% endblock %}
-	</header>
-	
-	<div class="content">
-	{% block content %}
-		AM
+<body id="top">
+<div class="wrapper col1">
+  <div id="topbar">
+    <p>Tel: +503 2145876 | Mail: ArduinoDomo@gmail.com</p>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col2">
+  <div id="header">
+    <div class="fl_left">
+      <h1><a href="index.html">DomoArduino</a></h1>
+      <p id="eslogan"><b>Domotica a un par de clicks</b></p>
+    </div>
+    <div class="fl_right"> <a href="#"><img src="{% static 'admin/img/icono.ico' %}" width="111" alt="" /></a> </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col3">
+  <div id="topnav">
+    <ul>
+     
+      <li><a href="">Seguridad</a></li>
+      <li><a href="">Confort</a></li>
+      <li><a href="#">Ocio</a>
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+        </ul>
+      </li>
+      <li class="last"><a href="#">Contactanos</a></li>
+    </ul>
+    <br class="clear" />
+  </div>
+</div>
+	AM
 		<label class="switch">
   			<input type="checkbox" id="cbox" checked onclick="myFunction()">
   			<span id="slider" class="slider round"></span>
 		</label>
 		PM
 		<br><br><br>
+<!-- ####################################################################################################### -->
+
+	<div class="content">
+	{% block content %}
 		Este es el Contenido de la pagina
 
-	{% endblock %}
-	</div>
-	
-	<footer>
-	{% block footer %}
-	<div class="content">
-		Todos los derechos reservados ©. DomoArduino 2018
-	</div>
-	{% endblock %}
-	</footer>
+		<div class="wrapper col4">
+  <div id="featured_slide">
+    <div id="featured_content">
+      <ul>
+        <li><a href="#"><img src="{% static 'admin/img/1.jpg' %}"  alt="" /></a></li>
+        <li><a href="#"><img src="{% static 'admin/img/2.JPG' %}"  alt="" /></a></li>
+        <li><a href="#"><img src="{% static 'admin/img/3.jpg' %}"  alt="" /></a></li>
+        <li><a href="#"><img src="{% static 'admin/img/4.png' %}"  alt="" /></a></li>
+      </ul>
+    </div>
+    </div>
+</div>
 
+
+<div class="wrapper col5">
+  <div id="container">
+    <div id="content">
+      <h2>Casas Domoticas</h2>
+      <img class="imgl" src="dom.jpg" alt="" width="300" />
+      <p>La domotica es un concepto que se refiere a la integracion de las distintas tecnologias en el hogar mediante el uso simultaneo de la electricidad, la electronica, la informatica y las telecomunicaciones. Su fin es mejorar la seguridad, el confort, la flexibilidad, las comunicaciones, el ahorro energético, facilitar el control integral de los sistemas para los usuarios y ofrecer nuevos servicios.</p>
+    </div>
+    <div id="column">
+      <div class="holder">
+        <h2>Otra Informacion</h2>
+        <ul id="latestnews">
+          <li>
+            <p><strong>Arduinos</strong></p>
+            <p>Nullamlacus dui ipsum cons eque loborttis non euis que morbi penas dapibulum orna.</p>
+            <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+          </li>
+          <li class="last">
+            <p><strong>Circuitos</strong></p>
+            <p>Nullamlacus dui ipsum cons eque loborttis non euis que morbi penas dapibulum orna.</p>
+            <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+	{% endblock %}
+	</div>
+
+
+<!-- ####################################################################################################### -->
+ {% block footer %}
+ <div class="wrapper col6">
+
+        <footer>
+      <section id="acerca-de">
+        <article>
+        <h3 class="est">Datos de Equipo de Trabajo</h3>
+         <div>Tecnicas de Programacion para Internet</div>
+         <div>lsfosdfsdfd</div>
+         <div>dlfjgodfgs`pdkfgtoe</div>
+        </article>
+      </section>
+       <section id="recomendaciones">
+        <h3 class="est">Busquedas recomendadas</h3>
+        <div> lsfasdfds</div>
+        <div>lsdfnsaldfasd</div>
+        <div>fsjdfpoeaoñlsdmnfml</div>
+      </section>
+      <section id="redes-s">
+        <h3 class="est"> Siguenos en redes sociales</h3>
+        <div class="fori" ><a href=""><img src="{% static 'admin/img/f.ico' %}"  width="40" alt=""></a></div>
+        <div class="fori" > <a href=""><img src="{% static 'admin/img/w.ico' %}"  width="40" alt=""></a></div>
+        <div class="fori"><a href=""><img src="{% static 'admin/img/t.ico' %}"  width="40" alt=""></a></div>
+        <div class="fori"><a href=""><img src="{% static 'admin/img/y.ico' %}"  width="50" alt=""></a></div>
+      </section>
+    <br class="clear" />
+  </div>
+</div>
+{% endblock %}
+<!-- ####################################################################################################### -->
+<div class="wrapper col7">
+  <div id="copyright">
+    <p class="fl_left">Copyright &copy; 2018 - Todos los derecho reservados - <a href="#">Nombre de dominio</a></p>
+    <br class="clear" />
+  </div>
+</div>
 </body>
 </html>

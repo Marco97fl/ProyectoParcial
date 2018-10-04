@@ -1,0 +1,181 @@
+  *{
+		padding: 0px;
+		margin: 0px;
+    }
+
+	#header
+	{
+		background: rgba(0,0,0,0.9);
+		width: 100%;
+		position: fixed;
+		z-index: 100;
+		margin:auto;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.nav
+	{
+		float: left;
+	}
+
+	.nav ul
+	{
+		list-style: none;
+		overflow: hidden;
+	}
+
+	.nav ul li 
+	{
+		float: left;
+		font-family: Arial, sans-serif;
+		font-size: 16px;
+	}
+
+	.nav ul li a 
+	{
+		display: block; 
+		padding: 20px;
+		color: #fff;
+		text-decoration: none;
+	}
+		 
+	.nav ul li:hover 
+	{
+		background: #3ead47;
+	}
+
+	ul, ol
+	{
+		list-style: none;
+
+	}
+
+	.nav li a 
+	{
+		background-color: #000;
+		color:#fff;
+		text-decoration: none;
+		padding: 16px 15px;
+		display: block;
+	}
+
+	.nav li a:hover
+	{
+		background-color: #3ead47;
+	}
+
+	.nav > li 
+	{
+		float: left;
+	}
+
+	.nav li ul
+	{
+		display: none;
+		position: absolute;
+		min-width: 140px;
+	}
+
+	.nav li:hover >ul
+	{
+		display: block;
+	}
+
+	.content 
+	{
+	  	padding-top: 60px;
+	}	
+
+
+body {
+	font-family: "Roboto", Arial, sans-serif;
+	min-height: 100vh;
+	background-color:  #d0d3d4;
+}
+
+
+/* Create angled background with 'before' pseudo-element */
+header::before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 6em;
+	width: 100%;
+	height: calc(var(--heading-height) + 10em);
+	z-index: -1;
+	transform: skewY(-3.5deg);
+	background: 
+		linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+		url(https://images.unsplash.com/photo-1495464101292-552d0b52fe41?auto=format&fit=crop&w=1350&q=80) no-repeat center,
+		linear-gradient(#4e4376, #2b5876);
+	background-size: cover;
+	border-bottom: .2em solid blue;
+}
+
+h1 {
+	font-size: calc(2.8em + 2.6vw);
+	font-weight: 700;
+	letter-spacing: .01em;
+	padding: 10px 0 0 4.5rem;
+	text-shadow: .022em .022em .022em #111;
+	color: #fff;
+	display: inline;
+
+}
+
+	.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 25px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 10px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

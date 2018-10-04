@@ -1,22 +1,20 @@
 {% load static from staticfiles %}
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 {% load static %}
 {% block head %}
-
-  <meta charset="UTF-8">
-
-  <meta property="og:title" content="Domo Arduino"/>
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://domoarduino.herokuapp.com/" />
-  <meta property="og:description" content="Pagina que ofrece informacion de tecnologias creadas con arduino para hacer nuestra casa mas tecnologica."/>
-  <meta property="og:image" content="http://www.mediafire.com/view/tcq6m9qc9ecafa1/logo_oficial.png"/>
-  <title>{% block title %} Domo Arduino {% endblock %}</title>
+	<meta charset="UTF-8">
+	<meta property="og:title" content="Domo Arduino"/>
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://domoarduino.herokuapp.com/" />
+	<meta property="og:description" content="Pagina que ofrece informacion de tecnologias creadas con arduino para hacer nuestra casa mas tecnologica."/>
+	<meta property="og:image" content="{% static 'admin/img/logo_oficial.png' %}"/>
+	<title>{% block title %} Domo Arduino {% endblock %}</title>
 
 {% endblock %}
-<link rel="icon" type="image/png" href="{% static 'admin/img/logo_oficial.ico' %}"/>  
+<link rel="icon" type="image/png" href="{% static 'admin/img/logo_oficial.ico' %}"/>	
+
 <link rel="stylesheet" href="{% static 'admin/css/estilos.css' %}">
 
 <script type="text/javascript">

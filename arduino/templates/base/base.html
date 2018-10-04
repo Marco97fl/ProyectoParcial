@@ -8,97 +8,17 @@
 	<title>{% block title %} Soy el titulo de la Pagina {% endblock %}</title>
 
 {% endblock %}	
-
-<style type="text/css" media="screen">
-    *{
-		padding: 0px;
-		margin: 0px;
-    }
-
-	#header
-	{
-		background: rgba(0,0,0,0.9);
-		width: 100%;
-		position: fixed;
-		z-index: 100;
-		margin:auto;
-		font-family: Arial, Helvetica, sans-serif;
-	}
-
-	.nav
-	{
-		float: left;
-	}
-
-	.nav ul
-	{
-		list-style: none;
-		overflow: hidden;
-	}
-
-	.nav ul li 
-	{
-		float: left;
-		font-family: Arial, sans-serif;
-		font-size: 16px;
-	}
-
-	.nav ul li a 
-	{
-		display: block; 
-		padding: 20px;
-		color: #fff;
-		text-decoration: none;
-	}
-		 
-	.nav ul li:hover 
-	{
-		background: #3ead47;
-	}
-
-	ul, ol
-	{
-		list-style: none;
-
-	}
-
-	.nav li a 
-	{
-		background-color: #000;
-		color:#fff;
-		text-decoration: none;
-		padding: 16px 15px;
-		display: block;
-	}
-
-	.nav li a:hover
-	{
-		background-color: #3ead47;
-	}
-
-	.nav > li 
-	{
-		float: left;
-	}
-
-	.nav li ul
-	{
-		display: none;
-		position: absolute;
-		min-width: 140px;
-	}
-
-	.nav li:hover >ul
-	{
-		display: block;
-	}
-
-	.content 
-	{
-	  	padding-top: 60px;
-	}	
-</style>
-
+<link rel="stylesheet" href="{% static 'admin/css/estilos.css' %}">
+<script type="text/javascript">
+	function myFunction() {
+   		if(document.getElementById("cbox").checked){
+   			document.getElementsByTagName("body")[0].style.backgroundColor = "#212f3c";
+   }
+   else{
+   	location.reload(); 
+   }
+}	 
+</script>
 </head>
 
 <body>
@@ -127,6 +47,7 @@
 			</ul>
 		</nav>
 	{% block header %}
+
 		Soy el encabezado de la pagina
 		
 	{% endblock %}
@@ -134,7 +55,13 @@
 	
 	<div class="content">
 	{% block content %}
-
+		AM
+		<label class="switch">
+  			<input type="checkbox" id="cbox" checked onclick="myFunction()">
+  			<span id="slider" class="slider round"></span>
+		</label>
+		PM
+		<br><br><br>
 		Este es el Contenido de la pagina
 
 	{% endblock %}

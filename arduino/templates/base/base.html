@@ -14,11 +14,11 @@
 	<meta property="fb:app_id" 		content="271526793473885"/>
 
 	<title>{% block title %} Domo Arduino {% endblock %}</title>
-
-{% endblock %}
 <link rel="icon" type="image/png" href="{% static 'admin/img/logo_oficial.ico' %}"/>	
 
 <link rel="stylesheet" href="{% static 'admin/css/estilos.css' %}">
+
+
 
 <script type="text/javascript">
   function myFunction() {
@@ -31,7 +31,7 @@
    }
 }  
 </script>
-
+{% endblock %}
 </head>
 <body id="top">
 <div class="wrapper col1">
@@ -78,10 +78,10 @@
 		PM</p>
 		<br><br><br>
 <!-- ####################################################################################################### -->
-
-	<div class="content">
 	{% block content %}
-		Este es el Contenido de la pagina
+	<div class="content">
+	
+		
 
 		<div class="wrapper col4">
   <div id="featured_slide">
@@ -124,9 +124,9 @@
     <br class="clear" />
   </div>
 </div>
-	{% endblock %}
+	
 	</div>
-
+{% endblock %}
 
 <!-- ####################################################################################################### -->
  {% block footer %}

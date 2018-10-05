@@ -47,10 +47,10 @@
 <div class="wrapper col2">
   <div id="header">
     <div class="fl_left">
-      <h1><a href="index.html">DomoArduino</a></h1>
+      <h1><a href="{% url 'home' %}">DomoArduino</a></h1>
       <p id="eslogan"><b>Domotica a un par de clicks</b></p>
     </div>
-    <div class="fl_right"> <a href="#"><img src="{% static 'admin/img/logo_oficial.png' %}" width="111" alt="" /></a> </div>
+    <div class="fl_right"> <a href="{% url 'home' %}"><img src="{% static 'admin/img/logo_oficial.png' %}" width="111" alt="" /></a> </div>
     <br class="clear" />
   </div>
 </div>
@@ -60,7 +60,7 @@
     <ul>
      
       <li><a href="">Seguridad</a></li>
-      <li><a href="">Confort</a></li>
+      <li><a href="{% url 'confort_diego' %}">Confort</a></li>
       <li><a href="#">Ocio</a>
         <ul>
           <li><a href="#">Link 1</a></li>
@@ -73,13 +73,13 @@
     <br class="clear" />
   </div>
 </div>
-		<p id="switchp">AM
+		<!--<p id="switchp">AM
 		<label class="switch">
   			<input type="checkbox" id="cbox" checked onclick="myFunction()">
   			<span id="slider" class="slider round"></span>
 		</label>
-		PM</p>
-		<br><br><br>
+		PM</p>-->
+		
 <!-- ####################################################################################################### -->
 	{% block content %}
 	<div class="content">

@@ -4,3 +4,8 @@ from django.views.generic import TemplateView
 class Vista(TemplateView):
 	template_name='base/base.html'
 
+
+class ConfortView(TemplateView):
+	template_name='apparduino/confort.html'
+		
+

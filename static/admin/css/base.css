@@ -245,7 +245,9 @@ table {
     border-collapse: collapse;
     border-color: #ccc;
 }
-
+#switchp{
+    color: black;
+}
 td, th {
     font-size: 13px;
     line-height: 16px;

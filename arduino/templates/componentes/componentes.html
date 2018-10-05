@@ -1,0 +1,27 @@
+
+{% extends 'base/base.html' %}
+{% block title %} Componentes {% endblock %}
+{% block content %}
+<div class="wrapper col5">
+  <div id="container">
+    <div id="content">
+    	<hr/>
+		<h1>
+			Componentes basicos a utilizar</h1>
+		<hr/>
+		<h2>Arduino nano</h2>
+		<hr/>
+		<p>	La placa Arduino Nano es una placa de prueba pequeña y completa basada en ATmega328. Tiene funcionalidad similar al modelo Arduino Duemilanove, pero en un módulo DIP. Solo carece de jack de alimentación DC y funciona con un cable Mini-B USB en lugar de uno estándar. Las características de entrada salida son que cada uno de los 14 pines digitales del Nano pueden ser usados como entrada o salida, usando las funciones pinMode(), digitalWrite(), y digitalRead(). Operan a 5 voltios. Cada pin puede proveer o recibir un máximo de 40mA y poseen una resistencia de pull-up (desconectada por defecto) de 20 a 50 kOhms</p>
+		<hr/>
+		<h2>Arduino uno</h2>				
+		<hr/>
+		<p>		
+			 	El Arduino Uno R3 utiliza el microcontrolador ATmega328. En adición a todas las características de las tarjetas anteriores, el Arduino Uno utiliza el ATmega16U2 para el manejo de USB en lugar del 8U2 (o del FTDI encontrado en generaciones previas). Esto permite ratios de transferencia más rápidos y más memoria. No se necesitan drivers para Linux o Mac (el archivo inf para Windows es necesario y está incluido en el IDE de Arduino). La tarjeta Arduino Uno R3 incluso añade pins SDA y SCL cercanos al AREF. Es más, hay dos nuevos pines cerca del pin RESET. Uno es el IOREF, que permite a los shields adaptarse al voltaje brindado por la tarjeta. El otro pin no se encuentra conectado y está reservado para propósitos futuros. La tarjeta trabaja con todos los shields existentes y podrá adaptarse con los nuevos shields utilizando esos pines adicionales.
+
+		</p>
+		
+		</div>
+		<br class="clear" />
+	</div>
+</div>
+{% endblock %}

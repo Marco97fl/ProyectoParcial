@@ -17,4 +17,8 @@ class ConfortP(TemplateView):
 		
 class ServidorWeb(TemplateView):
 	template_name='servidor/servidor.html'
+
+class componentes(TemplateView):
+	template_name='componentes/componentes.html'
+		
 		

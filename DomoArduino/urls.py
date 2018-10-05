@@ -27,4 +27,5 @@ urlpatterns = [
     path('seguridad/', views.SeguridadP.as_view(), name='seguridad'),
     path('pasosConfort/', views.ConfortP.as_view(), name='confortP'),
     path('pasosServidor/', views.ServidorWeb.as_view(), name='servidorP'),
+    path('arduinoComponentes/', views.componentes.as_view(), name='componentes'),
 ]

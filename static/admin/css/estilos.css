@@ -89,7 +89,9 @@ footer #acerca-de, #recomendaciones {
 
 }
 
-
+#switchp{
+    color: black;
+}
 	.est{
 font-family:sourcesans-light;
 	font-size:20px;

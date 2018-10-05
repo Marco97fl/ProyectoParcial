@@ -23,6 +23,7 @@
   function myFunction() {
     if(document.getElementById("cbox").checked){
         document.getElementsByTagName("body")[0].style.backgroundColor = "#212f3c";
+        document.getElementById("switchp").style.color = "white";
    }
    else{
     location.reload(); 
@@ -68,12 +69,12 @@
     <br class="clear" />
   </div>
 </div>
-	AM
+		<p id="switchp">AM
 		<label class="switch">
   			<input type="checkbox" id="cbox" checked onclick="myFunction()">
   			<span id="slider" class="slider round"></span>
 		</label>
-		PM
+		PM</p>
 		<br><br><br>
 <!-- ####################################################################################################### -->
 

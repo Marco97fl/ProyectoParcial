@@ -61,13 +61,21 @@
   <div id="topnav">
     <ul>
      
-      <li><a href="">Seguridad</a></li>
-      <li><a href="{% url 'confort_diego' %}">Confort</a></li>
-      <li><a href="#">Ocio</a>
+      <li><a href="#">Seguridad</a>
         <ul>
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
+          <li><a href="{% url 'seguridad' %}">pasos</a></li>
+        </ul>
+      </li>
+        
+      <li><a href="{% url 'confort_diego' %}">Confort</a>
+        <ul>
+          <li><a href="{% url 'confortP' %}">pasos</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Servidor Arduino</a>
+        <ul>
+          <li><a href="{% url 'servidorP' %}">servidor web</a></li>
+          
         </ul>
       </li>
       <li class="last"><a href="#">Contactanos</a></li>

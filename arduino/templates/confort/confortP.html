@@ -1,0 +1,108 @@
+
+{% extends 'base/base.html' %}
+{% block title %} Confort {% endblock %}
+{% block content %}
+<div class="wrapper col5">
+  <div id="container">
+    <div id="content">
+		<h1>Confort en casa domotica
+			</h1>
+		<h2>Control de nivel de llenado del tanque  y nivel de sal descalcificadora
+																					</h2>
+		<hr/>
+		<p>		
+			Los componentes que se han utilizado son:		
+			<ul>
+				<li>Arduino uno con su módulo de expansión para poder atornillar el cableado</li>
+				<li>Modulo de 2 relés</li>
+				<li>Electroválvula para el corte del llenado del tanque</li>
+				<li>Transformador de 12v para la alimentación del arduino</li>
+				<li>Sensor de ultrasonidos</li>	
+				<li>Sensor de humedad aunque en el montaje real se sustituyó por un sensor de rebose</li>	
+				<li>Fuente de alimentación conmutada 24v cc para alimentar la electroválvula</li>	
+				<li>Electroválvula 24v cc</li>	
+				<li>Cable multifilar apantallado</li>	
+				<li>3 cajas estancas de superficie y una placa multiperforadora</li>
+				<li>Una pantalla lcd</li>	
+				<li>Un potenciómetro para regular la intensidad de la pantalla</li>	
+				<li>Un pulsador para activar la bomba de agua para poder evacuarla del tanque</li>	
+
+
+			</ul>
+			este es el aspecto del montaje funcionando</p>
+		<img src="imagenes/1.PNG"/>
+		<p>		
+			Nuestro tipo de arquitectura es de tipo centralizada, como ya se comentó en el apartado de
+			tipología de arquitectura, esta es la instalación, en la que los elementos que vamos a
+			controlar y supervisar como pueden ser , sensores ,luces ,válvula , etc. se tienen que cablear
+			hasta donde se encuentra el sistema de control, que puede ser un pc , una centralita ,un
+			microcontrolador embebido el cual es nuestro caso.
+			Si falla nuestro sistema de control, se cae todo ya que todo depende de él, y la instalación se
+			tiene que hacer independiente a la instalación eléctrica y prever eso a la hora de hacer la
+			preinstalación.
+		</p>
+		<h2>Procedimiento</h2>	
+		<p>
+			Comenzamos cableando los cables que van a comunicar el arduino con la pantalla, para
+			mostrar la información que registre de los 2 sensores , el de ultrasonidos y el de la
+			descalcificadora.Aquí tenemos montada la caja que nos hará de display, se ha colocado un pulsador el cual
+			está conectado al arduino y cuando se pulse , este lo leerá y nos activara la bomba de agua
+			que tenemos introducida dentro del tanque , durante 1,45 min que es el tiempo que tarda
+			en llenarse una garrafa de agua de 25l con el caudal que nos da esta pequeña bomba.</p>	
+		<img src="imagenes/2.PNG"/>			
+		<p>
+			Aquí tenemos centralizada lo que seria la parte de potencia, donde tenemos la fuente de
+			alimentacion de 24v , para alimentar el rele de la electrovalvula ya que esta funciona a 24 v en cc.</p>	
+		<img src="imagenes/3.PNG"/>		
+		<p>
+			la electrovalvula por un lado conectada al filtro de osmosis y por el
+			otro a su rele.El otro rele es para la activacion de la bomba de agua y esta conecta a 230v el ac.Estos 2 reles claro esta, estan gobernados por la señal de arduino.
+			Como los cables multifilares que se han utilizado son apantallados para evitar el ruido o
+			armonicos generados por el motor del grupo de presion que se encuentra en el mismo lugar
+			de la instalacion , se unificaron las mallas de los cables y
+			se llevaron a tierra o sea a la pared de la casa a traves del cable marron que se aprecia en la
+			siguiente imagen.</p>
+		<img src="imagenes/4.PNG"/>					
+		<p>
+			Aquí tendríamos el sensor de ultrasonidos conectado a la descalcificadora, el cual nos manda
+			la información al arduino midiendo la distancia desde donde se encuentra el y donde está
+			la sal , cuando esta distancia supera los 40 cm , el arduino nos imprimirá en la pantalla que
+			nos falta sal, como se aprecia en la captura anterior de la caja de la lcd..</p>
+		
+		<img src="imagenes/5.PNG"/>	
+		<hr/>
+		<h2>Esquema de montaje</h2>
+		<hr/>
+		<img src="imagenes/6.PNG"/>		
+		<hr/>
+
+
+		<h2>Control de persianas</h2>
+		<hr/>
+		<p>	Cuando entramos dentro de nuestra interface , nos encontramos con los circuitos o
+			dispositivos a controlar, pues bien si lo que queremos es subir o bajar la persiana , basta
+			con presionar su circuito y desconectarlo para que la persiana se quede a la altura que
+			deseamos.</p>
+		<img src="imagenes/7.PNG"/>	
+		<hr/>
+		<h2>Control de iluminacion</h2>
+		<hr/>
+		<p>	Cuando entramos dentro de nuestra interface , nos encontramos con los circuitos o
+			dispositivos a controlar, pues bien si lo que queremos es encender o apagar las luces, basta
+			con presionar su circuito y desconectarlo para que la luz cambie de estado
+																						.</p>
+		<img src="imagenes/8.PNG"/>	
+
+		<hr/>
+		<h2>Control de Aire acondicionado</h2>
+		<hr/>
+		<p>	Este circuito funciona igual que todos los demás, pero varia un poco ya que el aire
+			acondicionado solo lo podemos gobernar para encenderlo y apagarlo no para cambiar de
+			modo , velocidad etc, esto se debe a que solo actuamos sobre la tensión que lo alimenta 
+																						.</p>
+		<img src="imagenes/9.PNG"/>		
+		</div>
+		<br class="clear" />
+	</div>
+</div>
+{% endblock %}

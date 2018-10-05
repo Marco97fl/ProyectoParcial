@@ -24,4 +24,7 @@ urlpatterns = [
     #path('', views.Vista, name='base'),
     path('', views.Vista.as_view(), name='home'),
     path('confort/', views.ConfortView.as_view(), name='confort_diego'),
+    path('seguridad/', views.SeguridadP.as_view(), name='seguridad'),
+    path('pasosConfort/', views.ConfortP.as_view(), name='confortP'),
+    path('pasosServidor/', views.ServidorWeb.as_view(), name='servidorP'),
 ]

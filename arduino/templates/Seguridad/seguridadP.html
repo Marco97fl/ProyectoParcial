@@ -1,0 +1,53 @@
+
+{% extends 'base/base.html' %}
+{% block title %} Seguridad {% endblock %}
+{% block content %}
+<div class="wrapper col5">
+  <div id="container">
+    <div id="content">
+		<h1>
+			Control de acceso mediante RFID y estados por voz</h1>
+		<p>	
+			Esta última parte del proyecto se divide por un lado lo que sería la identificación por radiofrecuencia y por otro el módulo de voz. Esta es la parte del montaje de identificación por radiofrecuencia, en la cual hemos utilizado los siguientes materiales:			
+			<ul>
+				<li>Un arduino mega</li>
+				<li>Un módulo RFID</li>
+				<li>Un sensor pir para simular la detención d la puerta de acceso a la casa</li>
+				<li>Módulo de voz Somo 14-d</li>
+				<li>Arduino uno</li>	
+				<li>Altavoz 1w y 8 hom</li>	
+			</ul>
+			El Arduino mega junto con el módulo de voz lo colocaremos en la caja de
+			telecomunicaciones donde se encuentran los relés del servidor creado</p>
+		
+
+
+
+		<p>		
+			Cabe destacar que todas las conexiones se harán con cable multifilar apantallado para evitar
+			posibles problemas ya que el cuadro eléctrico de la vivienda eta justo encima de donde irán
+			estos 2 dispositivos instalados.
+			Irían instalados dentro de la caja de telecomunicaciones como ya se ha mencionado.
+		</p>
+		<img src="admin/img/dom.jpg"/>			
+		<p>
+			Por otro lado tenemos el detector de RFID que se colocara en el lugar del interruptor de la
+			entrada , el cual se va a desplazar a otro lugar partiendo el mecanismo .</p>	
+		<img src="imagenes/2.PNG"/>			
+		<p>
+			En lugar de la tecla del interruptor se colocara una tapa ciega y lo más pegada a ella el lector
+			de RFID para no tener problemas cuando nos identifiquemos.
+			Solo quedaría conectar el Pir que iría en este lugar para solo hacer que actué cuando se abra la puerta y la alarma este armada</p>	
+		<img src="imagenes/3.PNG"/>		
+		<p>
+			Y por último nos quedaría solo la instalación del altavoz que como se puede apreciar en la captura, es un altavoz empotrable para techo que iría ubicado en la entrada a la vivienda.</p>
+		<img src="imagenes/4.PNG"/>					
+		<hr/>
+		
+		<h2>Esquema de montaje</h2>
+		<img src="imagenes/5.PNG"/>		
+		</div>
+		<br class="clear" />
+	</div>
+</div>
+{% endblock %}

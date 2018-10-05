@@ -9,3 +9,12 @@ class ConfortView(TemplateView):
 	template_name='apparduino/confort.html'
 		
 
+class SeguridadP(TemplateView):
+	template_name='Seguridad/seguridadP.html'
+		
+class ConfortP(TemplateView):
+	template_name='confort/confortP.html'
+		
+class ServidorWeb(TemplateView):
+	template_name='servidor/servidor.html'
+		

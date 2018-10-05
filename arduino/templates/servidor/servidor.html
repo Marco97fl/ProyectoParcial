@@ -1,0 +1,64 @@
+
+{% extends 'base/base.html' %}
+{% block title %} Confort {% endblock %}
+{% block content %}
+<div class="wrapper col5">
+  <div id="container">
+    <div id="content">
+		<h1>
+			Servidor web</h1>
+		<hr/>
+
+		<p>	
+			La arquitectura de esta parte del proyecto también es centralizada, como en las otras dos
+			partes, quiere decir que todo el sistema va conectado al arduino mega que tenemos en el
+			interior de la caja estanca.
+			<img src="imagenes/1.PNG"/>
+			<p>En esta caja tenemos 4 elementos diferenciados:</p>
+			<ul>
+				<li>Tenemos el arduino mega con su escudo de Ethernet con el que se ha creado el servidor web
+					, para utilizarlo como interface y gobernar a través de los circuitos de la vivienda.</li>
+				<img src="imagenes/2.PNG"/>
+				<li>También tenemos un módulo de relés</li>
+				<li>También se puede apreciar la placa multiperforadora donde se encuentran los 4 transistores
+					y el integrado 7404 de puertas not</li>				
+			</ul>
+			</p>
+		
+		<p>		
+			 	el rac de telecomunicaciones de la vivienda, el
+				cual se ha utilizado para dar servicio de internet a la shield de Ethernet y para alojar las 2
+				fuentes de alimentación, a través de este rac , se ha instalado el cableado multifilar que
+				comunica con los relés de los circuitos que se encuentran en el cuadro de
+				telecomunicaciones.
+
+		</p>
+		<P>El relé para cortar el suministro del mega se encuentra en el rac de telecomunicaciones</P>
+		<img src="imagenes/3.PNG"/>			
+		<p>
+			aquí estaría lo que podríamos denominar como la parte de la
+			fuerza de la instalación domótica .</p>	
+		<img src="imagenes/4.PNG"/>			
+		<p>
+			Aquí se puede apreciar la placa multiperforadora ,donde se encuentra soldado el cable que
+			viene del arduino previamente pasando por el transistor y un cable hembra para la
+			estimulación del relé, y en la parte de potencia de los relés se observan las fases de los
+			circuitos.
+			</p>	
+		<img src="imagenes/5.PNG"/>		
+		<p>
+			Los relés de la parte derecha , son los del accionamiento de la persiana, donde se tuvo que
+			hacer lo siguiente</p>
+		<img src="imagenes/6.PNG"/>					
+		<hr/>
+		
+		<h2>Esquema de montaje</h2>
+		<hr/>
+		<img src="imagenes/7.PNG"/>		
+
+		
+		</div>
+		<br class="clear" />
+	</div>
+</div>
+{% endblock %}

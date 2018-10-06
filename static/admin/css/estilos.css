@@ -41,17 +41,17 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 #header .fl_left{display:block; float:left; width:400px;}
 #header .fl_right{display:block; float:right; width:468px;}
 #header h1{margin:0; font-size:36px; border:none;}
-#header h1 a{	font-size: calc(1.1em + 0.9vw);
-	font-weight: 700;
-	letter-spacing: .01em;
-	padding: 10px 0 0 4.5rem;
-	text-shadow: .05em .05em .05em #111;color: #c51031 ; background-color:#2981cf;}
+#header h1 a{ font-size: calc(1.1em + 0.9vw);
+  font-weight: 700;
+  letter-spacing: .01em;
+  padding: 10px 0 0 4.5rem;
+  text-shadow: .05em .05em .05em #111;color: #c51031 ; background-color:#2981cf;}
 
  #eslogan{
- 	font-style: italic;
- 	font-size: 25px;
- 	color:#0d0d0d;
- 	text-align: center;
+  font-style: italic;
+  font-size: 25px;
+  color:#0d0d0d;
+  text-align: center;
  }
 
 
@@ -62,7 +62,7 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 #content{display:block; float:left; width:600px;}
 
 .imgl{
-	float: left;
+  float: left;
 }
 
 /* ----------------------------------------------Column------------------------------------- */
@@ -75,34 +75,34 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 
 
 footer section {
-	width:405px;
-	float:left;
-	padding:10px;
-	display: inline;
+  width:405px;
+  float:left;
+  padding:10px;
+  display: inline;
 }
 
 footer #acerca-de, #recomendaciones {
-	font-family:Arial, Helvetica, Sans-serif;
-	font-size:12px;
-	color:#919191;
-	text-align:justify;
-	line-height:20px;
+  font-family:Arial, Helvetica, Sans-serif;
+  font-size:12px;
+  color:#919191;
+  text-align:justify;
+  line-height:20px;
 
 }
 
 #switchp{
-    color: black;
+    color: white;
 }
-	.est{
+  .est{
 font-family:sourcesans-light;
-	font-size:20px;
-	color:#fff;
-	margin-bottom:5px;
+  font-size:20px;
+  color:#fff;
+  margin-bottom:5px;
 
-	}
+  }
 
 .fori{
-	display: inline;
+  display: inline;
 }
 
 
@@ -141,7 +141,7 @@ font-family:sourcesans-light;
 
 
 
-	.switch {
+  .switch {
   position: relative;
   display: inline-block;
   width: 60px;

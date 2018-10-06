@@ -6,23 +6,23 @@
 {% load static %}
 {% block head %}
 <meta name="google-site-verification" content="VKL7HBsLOodsVx798VaxfzOaKRlJ9l0_S9tFjBWXB0c" />
-	<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="autor" content="Estudiantes de la Universidad de El Salvador-Materia TPI115" />
   <meta name="keywords" content="Proyectos con Arduino"/>
   <meta name="generator" content="Django 2.0.5" />
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:site" content="@ArduinoDomo"/>
   <meta name="twitter:creator" content="@Marcofl97"/>
-	<meta property="og:title" content="Domo Arduino"/>
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="http://domoarduino.herokuapp.com/" />-
-	<meta property="og:description" content="Pagina que ofrece informacion de tecnologias creadas con arduino para hacer nuestra casa mas tecnologica."/>
-	<meta property="og:image" content="{% static 'admin/img/logo_oficial.png' %}"/>
-	<meta property="fb:admins" content="314310882486070" /> 
-	<meta property="fb:app_id" 		content="271526793473885"/>
+  <meta property="og:title" content="Domo Arduino"/>
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://domoarduino.herokuapp.com/" />-
+  <meta property="og:description" content="Pagina que ofrece informacion de tecnologias creadas con arduino para hacer nuestra casa mas tecnologica."/>
+  <meta property="og:image" content="{% static 'admin/img/logo_oficial.png' %}"/>
+  <meta property="fb:admins" content="314310882486070" /> 
+  <meta property="fb:app_id"    content="271526793473885"/>
 
-	<title>{% block title %} Domo Arduino {% endblock %}</title>
-<link rel="icon" type="image/png" href="{% static 'admin/img/logo_oficial.ico' %}"/>	
+  <title>{% block title %} Domo Arduino {% endblock %}</title>
+<link rel="icon" type="image/png" href="{% static 'admin/img/logo_oficial.ico' %}"/>  
 
 <link rel="stylesheet" href="{% static 'admin/css/estilos.css' %}">
 
@@ -39,22 +39,50 @@
 
 
 <script type="text/javascript">
-  function myFunction() {
+  function nocturno() {
     if(document.getElementById("cbox").checked){
         document.getElementsByTagName("body")[0].style.backgroundColor = "#212f3c";
-        document.getElementById("switchp").style.color = "white";
-   }
+        document.getElementById("wrapperp").style.backgroundColor = "#1f618d";
+        document.getElementsByClassName("col5")[0].style.backgroundColor = "#212f3c";
+        if (document.getElementsByClassName("col4").length!=0) {
+          document.getElementsByClassName("col4")[0].style.backgroundColor = " #16a085 ";
+        }
+        document.getElementsByClassName("col5")[0].style.color = "#E6E6FA";
+        var arrayMenu = document.getElementsByClassName("menu");
+        arrayMenu[0].style.color = "#A9A9A9";
+        arrayMenu[1].style.color = "#A9A9A9";
+        arrayMenu[2].style.color = "#A9A9A9";
+        arrayMenu[3].style.color = "#A9A9A9";
+        arrayMenu[4].style.color = "#A9A9A9";
+   } 
    else{
-    location.reload(); 
+      document.getElementsByTagName("body")[0].style.backgroundColor = "#fff";
+        document.getElementById("wrapperp").style.backgroundColor = "#333335";
+        document.getElementsByClassName("col5")[0].style.backgroundColor = "#fff";
+        if (document.getElementsByClassName("col4").length!=0) {
+          document.getElementsByClassName("col4")[0].style.backgroundColor = "#00ff8a";
+        }
+        document.getElementsByClassName("col5")[0].style.color = "#666666";
+        var arrayMenu = document.getElementsByClassName("menu");
+        arrayMenu[0].style.color = "#fff";
+        arrayMenu[1].style.color = "#fff";
+        arrayMenu[2].style.color = "#fff";
+        arrayMenu[3].style.color = "#fff";
+        arrayMenu[4].style.color = "#fff";
    }
 }  
 </script>
 {% endblock %}
 </head>
-<body id="top">
-<div class="wrapper col1">
+<body id="top" language=JavaScript onLoad="nocturno()">
+<div id="wrapperp" class="wrapper col1">
   <div id="topbar">
-    <p>Mail: domoarduinovida@gmail.com</p>
+    <p id="switchp">Mail: domoarduinovida@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  AM
+    <label class="switch">
+        <input type="checkbox" id="cbox" onclick="nocturno()">
+        <span id="slider" class="slider round"></span>
+    </label>PM
+  </p>
     <br class="clear" />
   </div>
 </div>
@@ -73,47 +101,42 @@
 <div class="wrapper col3">
   <div id="topnav">
     <ul>
-      <li><a href="{% url 'componentes' %}">Componentes</a>        
+      <li><a class="menu" href="{% url 'componentes' %}">Componentes</a>        
       </li>
         
 
-      <li><a href="{% url 'seguridadB' %}">Seguridad</a>
+      <li><a class="menu" href="{% url 'seguridadB' %}">Seguridad</a>
         <ul>
           <li><a href="{% url 'seguridad' %}">Descripcion</a></li>
         </ul>
       </li>
       
 
-      <li><a href="{% url 'confort_diego' %}">Confort</a>
+      <li><a class="menu" href="{% url 'confort_diego' %}">Confort</a>
         <ul>
-          <li><a href="{% url 'confortP' %}">Descripcion</a></li>
+          <li><a  href="{% url 'confortP' %}">Descripcion</a></li>
         </ul>
       </li>
-      <li><a href="{% url 'servidorB' %}">Servidor Arduino</a>
+      <li><a class="menu" href="{% url 'servidorB' %}">Servidor Arduino</a>
         <ul>
-          <li><a href="{% url 'servidorP' %}">servidor web</a></li>
+          <li><a  href="{% url 'servidorP' %}">servidor web</a></li>
           
         </ul>
       </li>
-      <li class="last"><a href="#">Contactanos</a></li>
+      <li class="last"><a class="menu" href="#">Contactanos</a></li>
     </ul>
     <br class="clear" />
   </div>
 </div>
-		<!--<p id="switchp">AM
-		<label class="switch">
-  			<input type="checkbox" id="cbox" checked onclick="myFunction()">
-  			<span id="slider" class="slider round"></span>
-		</label>
-		PM</p>-->
-		
+    
+    
 <!-- ####################################################################################################### -->
-	{% block content %}
-	<div class="content">
-	
-		
+{% block content %}
+  <div class="content">
+  
+    
 
-		<div class="wrapper col4">
+<div class="wrapper col4">
   <div id="featured_slide">
     <div id="featured_content">
       <ul>
@@ -129,6 +152,7 @@
 
 <div class="wrapper col5">
   <div id="container">
+    
     <div id="content">
       <h2>Casas Domoticas</h2>
       <img class="imgl" src="{% static 'admin/img/dom.jpg' %}" alt="" width="300" />
@@ -154,8 +178,8 @@
     <br class="clear" />
   </div>
 </div>
-	
-	</div>
+  
+  </div>
 {% endblock %}
 
 <!-- ####################################################################################################### -->

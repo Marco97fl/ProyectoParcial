@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url, include
 from arduino import views
+from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -30,4 +31,6 @@ urlpatterns = [
     path('arduinoComponentes/', views.componentes.as_view(), name='componentes'),
     path('seguridadBase/', views.seguridadB.as_view(), name='seguridadB'),
     path('servidorBase/', views.servidorB.as_view(), name='servidorB'),
+    url(r'^robots.txt$', TemplateView.as_view(template_name="robots.txt", content_type="text/plain"), name="robots_file"),
+    url(r'^sitemap.xml$', TemplateView.as_view(template_name="sitemap.xml", content_type="xml"), name="sitemap_file"),
 ]

@@ -28,4 +28,6 @@ urlpatterns = [
     path('pasosConfort/', views.ConfortP.as_view(), name='confortP'),
     path('pasosServidor/', views.ServidorWeb.as_view(), name='servidorP'),
     path('arduinoComponentes/', views.componentes.as_view(), name='componentes'),
+    path('seguridadBase/', views.seguridadB.as_view(), name='seguridadB'),
+    path('servidorBase/', views.servidorB.as_view(), name='servidorB'),
 ]

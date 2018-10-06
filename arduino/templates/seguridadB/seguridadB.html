@@ -1,0 +1,22 @@
+
+{% extends 'base/base.html' %}
+{% block title %} Seguridad{% endblock %}
+{% block content %}
+<div class="wrapper col5">
+  <div id="container">
+    <div id="content">
+    	<hr/>
+		<h1>Seguridad
+			</h1>
+		
+		<hr/>
+		
+		<p>		
+			Partimos de la base de que la alarma está conectada y en su estado de reposo o sea desarmada, cuando nos dirigimos a salir de nuestra vivienda, tenemos el lector RFID en el cual nos identificamos mediante un tag, este tag esta memorizado en el programa de nuestro Arduino por lo que si se usa otro que no está dado de alta no hará ninguna función. Una vez nos identificamos, el estado de la alarma pasa a conectado y cuando se regresa a casa , al abrir la puerta el sensor de movimiento lo detecta y la alarma nos pide que nos identifiquemos , lo cual hacemos y esta se desactiva, si no lo hiciésemos saltaría la escena programada como intruso .
+		</p>
+		
+		</div>
+		<br class="clear" />
+	</div>
+</div>
+{% endblock %}

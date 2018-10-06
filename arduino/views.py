@@ -21,4 +21,9 @@ class ServidorWeb(TemplateView):
 class componentes(TemplateView):
 	template_name='componentes/componentes.html'
 		
+class seguridadB(TemplateView):
+	template_name='seguridadB/seguridadB.html'
+		
+class servidorB(TemplateView):
+	template_name='servidorB/servidorB.html'
 		

@@ -23,7 +23,7 @@
 
   <title>{% block title %} Domo Arduino {% endblock %}</title>
 <link rel="icon" type="image/png" href="{% static 'admin/img/logo_oficial.ico' %}"/>  
-
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <link rel="stylesheet" href="{% static 'admin/css/estilos.css' %}">
 
 <!--Esto es para el registro en el google analytics-->
@@ -101,29 +101,29 @@
 <div class="wrapper col3">
   <div id="topnav">
     <ul>
-      <li><a class="menu" href="{% url 'componentes' %}">Componentes</a>        
+      <li><a class="menu" href="{% url 'componentes' %}"><i class="fas fa-toolbox"></i> Componentes</a>        
       </li>
         
 
-      <li><a class="menu" href="{% url 'seguridadB' %}">Seguridad</a>
+      <li><a class="menu" href="{% url 'seguridadB' %}"><i class="fas fa-lock"></i> Seguridad</a>
         <ul>
           <li><a href="{% url 'seguridad' %}">Descripcion</a></li>
         </ul>
       </li>
       
 
-      <li><a class="menu" href="{% url 'confort_diego' %}">Confort</a>
+      <li><a class="menu" href="{% url 'confort_diego' %}"><i class="fas fa-child"></i> Confort</a>
         <ul>
           <li><a  href="{% url 'confortP' %}">Descripcion</a></li>
         </ul>
       </li>
-      <li><a class="menu" href="{% url 'servidorB' %}">Servidor Arduino</a>
+      <li><a class="menu" href="{% url 'servidorB' %}"><i class="fas fa-server"></i> Servidor Arduino</a>
         <ul>
-          <li><a  href="{% url 'servidorP' %}">servidor web</a></li>
+          <li><a  href="{% url 'servidorP' %}"> servidor web</a></li>
           
         </ul>
       </li>
-      <li class="last"><a class="menu" href="#">Contactanos</a></li>
+      <li class="last"><a class="menu" href="#"><i class="fas fa-users"></i> Contactanos</a></li>
     </ul>
     <br class="clear" />
   </div>
@@ -155,7 +155,7 @@
     
     <div id="content">
       <h2>Casas Domoticas</h2>
-      <img src="{% static 'admin/img/dom.jpg' %}" alt="" width="300" />
+      <img class="imgl" src="{% static 'admin/img/dom.jpg' %}" alt="" width="300" />
       <p>La domotica es un concepto que se refiere a la integracion de las distintas tecnologias en el hogar mediante el uso simultaneo de la electricidad, la electronica, la informatica y las telecomunicaciones. Su fin es mejorar la seguridad, el confort, la flexibilidad, las comunicaciones, el ahorro energético, facilitar el control integral de los sistemas para los usuarios y ofrecer nuevos servicios.</p>
     </div>
     <div id="column">
@@ -165,12 +165,12 @@
           <li>
             <p><strong>Arduinos</strong></p>
             <p>es una plataforma de prototipos electrónica de código abierto (open-source) basada en hardware y software flexibles y fáciles de usar.</p>
-            <p class="readmore"><a href="https://es.wikipedia.org/wiki/Arduino" target="_blank">Continuar leyendo &raquo;</a></p>
+            <p class="readmore"><a href="#">Continuar leyendo &raquo;</a></p>
           </li>
           <li class="last">
             <p><strong>Circuitos</strong></p>
             <p>es una red electrónica (fuentes, interruptores y semiconductores) que contiene al menos una trayectoria cerrada. </p>
-            <p class="readmore"><a href="https://es.wikipedia.org/wiki/Circuito" target="_blank">Continuar leyendo &raquo;</a></p>
+            <p class="readmore"><a href="#">Continuar leyendo &raquo;</a></p>
           </li>
         </ul>
       </div>
@@ -215,7 +215,7 @@
 <!-- ####################################################################################################### -->
 <div class="wrapper col7">
   <div id="copyright">
-    <p class="fl_left">Copyright &copy; 2018 - Todos los derecho reservados - <a href="https://www.heroku.com/" target="_blank">HEROKU</a></p>
+    <p class="fl_left">Copyright &copy; 2018 - Todos los derecho reservados - <a href="https://www.heroku.com/">HEROKU</a></p>
     <br class="clear" />
   </div>
 </div>

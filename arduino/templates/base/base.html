@@ -75,6 +75,29 @@
 {% endblock %}
 </head>
 <body id="top" language=JavaScript onLoad="nocturno()">
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v3.1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v3.1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+  
 <div id="wrapperp" class="wrapper col1">
   <div id="topbar">
     <p id="switchp">Mail: domoarduinovida@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  AM
@@ -181,6 +204,27 @@
   
   </div>
 {% endblock %}
+
+ {% block redesSociales %}
+ <div class="wrapper col8">
+<label class="lis">Compartenos en tus redes sociales</label>
+
+
+ <div id="t" ><g:plusone size="medium"></g:plusone></div>
+
+ <a class='twitter-share-button' data-count='vertical' data-lang='es' href='http://twitter.com/share'>Tweet</a>
+
+<div id="fc" class="fb-like" data-href="https://http://domoarduino.herokuapp.com/docs/plugins/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+
+   <label id="lc" class="lis">Lista de Comentarios</label>
+
+   <div class="fb-comments" data-href="https://www.domoarduino.herokuapp.com/docs/plugins/comments#configurator" data-width="100%" data-numposts="5">
+ </div>
+ <div class="fb-like" data-href="https://www.domoarduino.herokuapp.com/docs/plugins/" data-width="40%" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+{% endblock %}
+
+
+
 
 
  {% block footer %}

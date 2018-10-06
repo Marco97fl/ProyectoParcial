@@ -2,19 +2,146 @@
 {% extends 'base/base.html' %}
 {% block title %} Seguridad{% endblock %}
 {% block content %}
+{% load static %}
 <div class="wrapper col5">
   <div id="container">
     <div id="content">
     	<hr/>
-		<h1>Seguridad
-			</h1>
-		
+		<h1>La Domótica en la Seguridad de la Vivienda</h1>
 		<hr/>
-		
-		<p>		
-			Partimos de la base de que la alarma está conectada y en su estado de reposo o sea desarmada, cuando nos dirigimos a salir de nuestra vivienda, tenemos el lector RFID en el cual nos identificamos mediante un tag, este tag esta memorizado en el programa de nuestro Arduino por lo que si se usa otro que no está dado de alta no hará ninguna función. Una vez nos identificamos, el estado de la alarma pasa a conectado y cuando se regresa a casa , al abrir la puerta el sensor de movimiento lo detecta y la alarma nos pide que nos identifiquemos , lo cual hacemos y esta se desactiva, si no lo hiciésemos saltaría la escena programada como intruso .
+		<h2>Introducción</h2>
+		<p>
+			La tecnología aplicada en la vivienda se va desallorando por los avances tecnológicos de la ciencia en todo el mundo y debido al cambio de la sociedad por un modo de vivir más eficiente acorde con sus necesidades diarias; La automatización de la vivienda asocia tecnologías de software y la electrónica aplicada en telecomunicaciones, con la cual podemos mejorar el confort, la seguridad, el ahorro de energía, las comunicaciones y otros factores que influyen en la vivienda, este tipo de tecnología tiene un gran crecimiento en todo el mundo debido a sus grandes prestaciones. 
 		</p>
-		
+		<h2>Aplicación de la Domótica en la Seguridad</h2>
+		<p>
+			En una vivienda, la seguridad de es lo más importante que debe tener para la protección del usuario debido a los grandes peligros que se presentan diariamente, mediante la domótica aplicada en el campo de la seguridad existen diversos sistemas con los cuales se puede proteger el bienestar de la persona y todos sus bienes personales, este tipo de sistemas actúan recibiendo una señal por medio de sensores y producen una respuesta mediante actuadores, tales como una alarma, un mensaje de texto al celular del usuario, un corte energía en el sistema eléctrico de la vivienda, etc. Existen cuatro tipos de niveles de seguridad, los cuales se detallan a continuación.
+		</p>
+		<h3>1. Protección Exterior:</h3>
+		<p>
+			Estos sistemas de protección tienen la función de detectar presencia de movimiento u objetos extraños en los alrededores de la vivienda, estos sistemas cuentan con dispositivos electrónicos tales como:
+		</p>
+		<h4>1.1. Sendor de movimiento:</h4>
+		<p>
+			Un sensor de movimiento electrónico tiene la función de detectar una señal física, como un movimiento de cualquier objeto o persona, a través de un sensor interno y en consecuencia se produce una señal de salida mediante un actuador el cual nos da una respuesta en forma electrónica, esta respuesta puede ser por medio de una alarma conectada al sensor, o una visualización en un computador de la señal de ingreso mediante una cámara de vigilancia.
+		</p>
+		<div class="containerImage">
+  			<img class="image" src="{% static 'admin/img/seguridad/6.png' %}" align="center" alt="" /></a>
+  			<div class="overlay">
+    			<div class="textImage">Sensor de movimiento</div>
+  			</div>
+		</div>
+		<br>
+		<h4>1.2. Barrera de Rayos infrarrojos:</h4>
+		<p>
+			Es un sistema de rayos infrarrojos, estos rayos son invisibles a simple vista del ojo humano, este tipo de dispositivo sirve para alertar al usuario cuando se produce alguna intrusión en toda la área externa de la vivienda.	
+		</p>
+		<div class="containerImage">
+  			<img class="image" src="{% static 'admin/img/seguridad/7.png' %}" alt="" /></a>
+  			<div class="overlay">
+    			<div class="textImage">Sistema de rayos infrarrojos en una vivienda</div>
+  			</div>
+		</div><br>
+
+		<h4>1.3. Sensor de apertura por contactos magnéticos:</h4>
+		<p>
+			Consisten en unos contactos metálicos los cuales se colocan por pares en las ventanas o puertas de la vivienda, estos dispositivos se activarán si la puerta o ventana es abierta, al suceder esto, el par de láminas se separan, lo que provoca que la corriente deje de circular por el circuito y por consiguiente se activará una alarma de aviso.
+		</p>
+		<div class="containerImage">
+  			<img class="image" src="{% static 'admin/img/seguridad/8.png' %}" alt="" /></a>
+  			<div class="overlay">
+    			<div class="textImage">Contactos de aperturas magnéticos</div>
+  			</div>
+		</div><br>
+		<h4>1.4. Sensor de sonido:</h4>
+		<p>
+			Este tipo de sensor detecta ruido producido por algún factor externo, se lo utiliza para cuando existen ruidos fuertes en los perímetros de la vivienda por ejemplo la ruptura de una ventana.
+		</p>
+		<div class="containerImage">
+  			<img class="image" src="{% static 'admin/img/seguridad/9.png' %}" alt="" /></a>
+  			<div class="overlay">
+    			<div class="textImage">Sensor de sonido</div>
+  			</div>
+		</div><br>
+		<h3>2. Protección Interior:</h3>
+		<p>
+			Este sistema protege sobre peligros en el interior de la vivienda, este tipo de protecciones son de gran ayuda, debido a que si por algún factor el sistema exterior es penetrado, o si el peligro ocurre solo dentro de la vivienda este sistema interior actuará inmediatamente.
+		</p>
+		<h4>2.1. Simulador de Presencia:</h4>
+		<p>
+			Este sistema se encarga de proteger el interior del hogar mediante un sistema configurado de encendido y apagado de todas las luces de la vivienda, de tal manera que si el propietario se encuentra fuera, este sistema simulará la presencia de personas dentro de la vivienda, por lo cual reducirá el riesgo de alguna intrusión no deseada.
+		</p>
+		<h4>2.2. Sistema de vigilancia CCTV:</h4>
+		<p>
+			Este sistema denominado CCTV (Circuito Cerrado de Televisión) consiste en la utilización de videocámaras para documentar lo que acontece dentro de un ambiente en el día y en la noche por igual, en la noche mediante videocámaras infrarrojas; utilizando una o varias videocámaras se puede visualizar de una manera muy eficiente si algún intruso ha invadido en la vivienda, o poder descubrir la causa de algún incidente que se haya producido en cualquier parte de la vivienda ubicado dentro del rango de vigilancia de las videocámaras en tiempo real, este sistema de videocámaras puede estar conectado directamente a uno a varios monitores para su directa visualización, este sistema se clasifica en tres tipos básicos:
+			<br><br>
+			<i>Captación punto a punto:</i>
+			<br><br>
+			Este sistema incorpora la visualización en un solo punto de un lugar establecido mediante la ubicación de una sola videocámara.
+			<br><br><i>Captación de varios puntos:</i>
+			<br><br>
+			Mediante la utilización de varias videocámaras en diferentes puntos de un solo ambiente se puede visualizar lo que acontece por medio de un solo monitor el cual está conectado directamente a todas esas videocámaras, se puede utilizar un monitor para cada espacio o habitación de la vivienda utilizando varias videocámaras colocadas distribuidamente.
+			<br>
+			<img class="seguridad" src="{% static 'admin/img/seguridad/10.png' %}" alt="" /></a>
+			<br><br><i>Captación de puntos concentrados:</i><br><br>
+			Este sistema dispone de una o varias videocámaras enfocadas en el lugar deseado, pero la visualización de estos puntos ya no es restringida a un solo monitor, se puede receptar la imagen de un solo punto a través de varios monitores. <br>
+		</p>
+		<h3>3. Protección Personal:</h3>
+		<p>Este sistema sirve para prevenir que las personas sufran algún tipo de daño o accidente cuando una intrusión o cualquier tipo de peligro este cerca del usuario.</p>
+		<h4>3.1. Botón de Pánico:</h4>
+		<p>
+			Es un dispositivo electrónico el cual puede ser inalámbrico o cableado al hogar en un lugar estratégico para cuando exista un peligro o alguna actividad sospechosa en la vivienda el usuario pueda pulsar este botón el cual activa una alarma silenciosa y envía una señal de auxilio a una central de ayuda cercana o a la policía para su ayuda inmediata.	
+		</p>
+		<div class="containerImage">
+  			<img class="image" src="{% static 'admin/img/seguridad/11.png' %}" alt="" /></a>
+  			<div class="overlay">
+    			<div class="textImage">Botón de Pánico</div>
+  			</div>
+		</div><br>
+		<h4>3.2. Avisadores de asistencia:</h4>
+		<p>
+          Este tipo de dispositivos se encargan de mandar una señal a un centro de ayuda para la asistencia personal, la usan con más frecuencia personas de tercera edad, personas que sufren de algún tipo de enfermedad o personas discapacitadas, este sistema puede ser implementado en dispositivos comunes tales como relojes, pulseras, llaveros etc.
+		</p>
+		<div class="containerImage">
+  			<img class="image" src="{% static 'admin/img/seguridad/12.png' %}" alt="" /></a>
+  			<div class="overlay">
+    			<div class="textImage">Llavero con alarma de pánico, SOS, y auxilio médico</div>
+  			</div>
+		</div><br>
+		<h3>4. Alarmas técnicas o de detección:</h3>
+		<p>
+			Las alarmas técnicas o de detección alertan al usuario de alguna anomalía en la vivienda ocasionada por un fallo de algún dispositivo u otro factor provocando peligros como un incendio, una inundación o un escape de gas, este tipo de alarmas funcionan de manera que si existe un incendio y se produce humo se puede activar un sistema con el cual se abran automáticamente las ventanas o las puertas de la vivienda o si existe un escape de gas el sistema se activa y cierra las válvulas de suministro de gas, existen varios sistemas de alarmas de este tipo tales como:
+		</p>
+		<h4>4.1. Alarmas contra incencios:</h4>
+		<p>
+			Las alarmas de incendios tienen la función de detectar una variación en el aire, detectando la presencia de humo en el ambiente, este tipo de alarmas pueden tener una conexión con una central de monitoreo para lograr controlar de manera eficiente si es que produce un incendio en la vivienda enviando inmediatamente a los bomberos o socorristas al lugar, estos sistemas pueden ser adaptados de tal forma que sean inteligentes, es decir que pueden reconocer y realizar ciertas acciones dependiendo de la zona donde se produjo el incidente.
+		</p>
+		<div class="containerImage">
+  			<img class="image" src="{% static 'admin/img/seguridad/13.png' %}" alt="" /></a>
+  			<div class="overlay">
+    			<div class="textImage">Sensor de Humo</div>
+  			</div>
+		</div><br>
+		<h4>4.2. Alarmas contra inundaciones:</h4>
+		<p>
+			Este sistema de alarma es utilizado más comúnmente en los cuartos como el baño en los cuales pueden existir electroválvulas las cuales ofrecen el paso de un flujo de agua, al detectar un exceso en un cierto nivel de agua el sensor activa a las electroválvulas las cuales cortan el suministro de agua, o la drenan hacia una salida externa de una manera automática. 
+		</p>
+		<div class="containerImage">
+  			<img class="image" src="{% static 'admin/img/seguridad/14.png' %}" alt="" /></a>
+  			<div class="overlay">
+    			<div class="textImage">Sensor de Agua</div>
+  			</div>
+		</div><br>
+		<h4>4.3. Alarmas contra fuga de gas:</h4>
+		<p>
+			Consiste en un sistema de alarma se compone de un sensor de gas, el cual puede ser colocado en cierta altura de la cocina dependiendo el tipo de gas, si es un gas pesado se lo instalará cerca del suelo, en cambio si es un gas ligero cerca del techo, es recomendable instalar en los dos lugares para una mayor protección, este sensor se puede utilizar conjunto a una electroválvula la cual puede cortar el suministro de gas si se detecta alguna anomalía en el aire.
+		</p>
+		<div class="containerImage">
+  			<img class="image" src="{% static 'admin/img/seguridad/15.png' %}" alt="" / align="center"></a>
+  			<div class="overlay">
+    			<div class="textImage">Sensor de Fuga de gas</div>
+  			</div>
+		</div><br>
 		</div>
 		<br class="clear" />
 	</div>

@@ -1,0 +1,84 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block title %} DomoArduino {% endblock %}
+{% block content %}
+<div class="wrapper col5">
+  	<div id="container">
+  		<div id="content">
+			<div>
+				<h1>Domótica a un par de clics</h1>
+				<div>
+					<h2>¿Que es una vivienda domótica?</h2>
+					<hr/>
+						<p>
+							Desde la perspectiva del usuario una vivienda domótica es aquella que proporciona una mayor calidad de vida a través de las nuevas tecnologías, ofreciendo una reducción del trabajo doméstico, un aumento del bienestar y la seguridad de sus habitantes. Todo ello teniendo en cuenta la facilidad de uso para todos los inquilinos, aun cuando alguno de ellos presente alguna discapacidad o deficiencia.
+							<br>
+							<h3>El siguiente video nos muestra mas acerca del tema</h3>
+							<iframe width="720" height="460" src="https://www.youtube.com/embed/g2SCOYVK8-Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>	
+						<hr/>
+						<br>
+						<br>
+						</p>
+						<h2>¿Qué nos aporta la Domótica?</h2>
+						<h3>Facilita el ahorro energético:</h3>
+						<p>
+							Gestiona inteligentemente la iluminación, climatización, el riego, los electrodomésticos etc. Aprovechando mejor los recursos naturales, utilizando las tarifas horarias de menor costo y reduciendo así la factura energética.
+							<br>
+							<img src="{% static 'admin/img/inicio/aenerg.jpg' %}"  width="700" alt="460"> 
+						</p>
+						<h3>Aporta seguridad:</h3>
+						<p>
+							Mediante la vigilancia automática de personas, animales y bienes, así como incidencias y averías. Mediante controles de intrusión, cierre automático de todas las aberturas, cámaras de vigilancia, alarmas personales, y a través de alarmas técnicas que permiten detectar incendios, fallas de suministro eléctrico, etc.
+							<br>
+							<img src="{% static 'admin/img/inicio/asegur.jpg' %}"  width="700" alt="460">
+						</p>
+						<h3>Aporta confort:</h3>
+						<p>
+							El concepto de confort va dirigido principalmente a las instalaciones de CVC (climatización, ventilación y calefacción), aunque se incluyen en este campo todos los sistemas que contribuyan al bienestar, la comodidad, así como a la reducción del trabajo doméstico.
+							<br>
+							<img src="{% static 'admin/img/inicio/aconf.jpg' %}"  width="700" alt="460">
+						</p>
+				</div>
+				<hr/>
+				<div>
+					<h2>La Domótica y Arduino</h2>
+						<p>
+							Al ser Arduino una plataforma de hardware libre tanto su diseño como su distribución puede utilizarse libremente para el desarrollo de cualquier tipo de proyecto sin haber adquirido ninguna licencia. Por eso existen varios tipos de placa oficiales, las creadas por la comunidad Arduino o las no oficiales creadas por terceros, pero con características similares. 
+							En la placa Arduino es donde conectaremos los sensores, actuadores y otros elementos necesarios para comunicarnos con el sistema.
+							<br>
+							<img src="{% static 'admin/img/inicio/arduiUno.png' %}"  width="700" alt="460">
+						</p>
+						<h3>Ventajas de utilizar arduino</h3>
+						<p>
+							<ul>
+								<li>
+									Simplifica: Arduino simplifica el proceso de trabajar con microcontroladores.
+									<br> 
+								</li>
+								<br>
+								<li>
+									Bajos costos: Las placas Arduino son más accesibles comparadas con otras plataformas de microcontroladores. Los módulos más caros de Arduino pueden ser montadas a mano bajando sus costos.
+								</li>
+								<br>
+								<li>
+									Multi-Plataforma: El software de Arduino funciona en los sistemas operativos Windows, Macintosh OSX y Linux; mientras que la mayoría de otros entornos para microcontroladores están únicamente limitados a Windows.
+								</li>
+								<br>
+								<li>
+									Entorno de programación simple y directo: El entorno de programación de Arduino es fácil de usar para principiantes y flexible para los usuarios avanzados. 
+								</li>
+								<br>
+								<li>
+									Plataforma abierta: La filosofía en la que se basa Arduino es el código abierto u Open Source en ingles en cuanto al software y al hardware abierto para el tema de los componentes. Con esto se consigue ampliar la capacidad de desarrollo y construir una gran cantidad de proyectos con Arduino. Y sobre todo deja en manos de los inventores y desarrolladores el límite de lo que hacer con Arduino pudiendo combinar con otras plataformas o destinar lo a multitud de funciones.
+								</li>	
+							</ul>
+						</p>
+					<h2>El siguiente video nos explicamas mas acerca de Arduino</h2>
+					<iframe width="720" height="460" src="https://www.youtube.com/embed/IDi5QlO6mxQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>	
+		<br class="clear" />
+	</div>
+</div>
+{% endblock %}

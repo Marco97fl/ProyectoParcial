@@ -2,6 +2,7 @@
 
 {% extends 'base/base.html' %}
 {% load static %}
+{% load staticfiles %}
 {% block title %} Confort {% endblock %}
 {% block content %}
 <div class="wrapper col5">
@@ -15,12 +16,12 @@
 			La arquitectura de esta parte del proyecto también es centralizada, como en las otras dos
 			partes, quiere decir que todo el sistema va conectado al arduino mega que tenemos en el
 			interior de la caja estanca.
-			<img src="imagenes/1.PNG"/>
+			<img src="{% static 'admin/img/1s.PNG' %}"  width="700" alt="460">	
 			<p>En esta caja tenemos 4 elementos diferenciados:</p>
 			<ul>
 				<li>Tenemos el arduino mega con su escudo de Ethernet con el que se ha creado el servidor web
 					, para utilizarlo como interface y gobernar a través de los circuitos de la vivienda.</li>
-				<img src="imagenes/2.PNG"/>
+				<img src="{% static 'admin/img/2s.PNG' %}"  width="700" alt="460">	
 				<li>También tenemos un módulo de relés</li>
 				<li>También se puede apreciar la placa multiperforadora donde se encuentran los 4 transistores
 					y el integrado 7404 de puertas not</li>				
@@ -36,27 +37,27 @@
 
 		</p>
 		<P>El relé para cortar el suministro del mega se encuentra en el rac de telecomunicaciones</P>
-		<img src="imagenes/3.PNG"/>			
+		<img src="{% static 'admin/img/3s.PNG' %}"  width="700" alt="460">		
 		<p>
 			aquí estaría lo que podríamos denominar como la parte de la
 			fuerza de la instalación domótica .</p>	
-		<img src="imagenes/4.PNG"/>			
+		<img src="{% static 'admin/img/4s.PNG' %}"  width="700" alt="460">		
 		<p>
 			Aquí se puede apreciar la placa multiperforadora ,donde se encuentra soldado el cable que
 			viene del arduino previamente pasando por el transistor y un cable hembra para la
 			estimulación del relé, y en la parte de potencia de los relés se observan las fases de los
 			circuitos.
 			</p>	
-		<img src="imagenes/5.PNG"/>		
+		<img src="{% static 'admin/img/5s.PNG' %}"  width="700" alt="460">	
 		<p>
 			Los relés de la parte derecha , son los del accionamiento de la persiana, donde se tuvo que
 			hacer lo siguiente</p>
-		<img src="imagenes/6.PNG"/>					
+		<img src="{% static 'admin/img/6s.PNG' %}"  width="700" alt="460">				
 		<hr/>
 		
 		<h2>Esquema de montaje</h2>
 		<hr/>
-		<img src="imagenes/7.PNG"/>		
+		<img src="{% static 'admin/img/7s.PNG' %}"  width="700" alt="460">	
 
 		
 		</div>

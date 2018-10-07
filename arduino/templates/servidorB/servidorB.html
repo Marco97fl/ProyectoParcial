@@ -1,0 +1,39 @@
+
+{% extends 'base/base.html' %}
+{% block title %} Servidor{% endblock %}
+{% block content %}
+<div class="wrapper col5">
+  <div id="container">
+    <div id="content">
+    	<hr/>
+		<h1>Servidor
+			</h1>
+		
+		<hr/>
+		
+		<p>		
+			controlar una serie de circuitos y componentes del hogar de forma automática a través de una interface.
+			
+			pensar en usar la shield de Ethernet para trabajar solo como red local por wiffi, pero claro el inconveniente principal era que solo
+			podríamos interactuar con la casa dentro de esta o en sus inmediaciones hasta donde nos
+			llegase la señal del router . Entonces fue cuando por fin nos decantamos en hacer un
+			servidor web para poder trabajar tanto dentro de casa con y sin wiffi y fuera de casa por
+			medio de la red 4g.
+			
+			Para acceder a nuestro sistema, lo que hacemos es introducir en la barra del navegador la ip
+			dinámica de nuestro router y así nos aparecerá en nuestro dispositivo ya sea el móvil, Tablet
+			o pc la interface que hemos creado.
+			Una vez en nuestra interface ya podemos interactuar con los circuitos y dispositivos
+			conectados presionando el botón de on u off, la peculiaridad de hacer este servidor y que es
+			una por las cuales nos decantamos por este sistema es que guarda la información en la
+			memoria Eprom de nuestro arduino , esto significa, que si conectamos un circuito y salimos
+			de la página o se nos quedase sin tensión la placa seguiría esa acción conectada , claro la
+			parte de la falta de tensión depende del tiempo que transcurra hasta la vuelta de esta ya
+			que está limitado por la energía acumulada en los condensadores de la placa.
+		</p>
+		
+		</div>
+		<br class="clear" />
+	</div>
+</div>
+{% endblock %}

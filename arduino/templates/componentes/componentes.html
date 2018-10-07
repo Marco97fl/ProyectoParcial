@@ -1,0 +1,90 @@
+
+{% extends 'base/base.html' %}
+{% block title %} Componentes {% endblock %}
+{% block content %}
+<div class="wrapper col5">
+  <div id="container">
+    <div id="content">
+    	<hr/>
+		<h1>
+			Componentes basicos a utilizar</h1>
+		<hr/>
+		<h2>Arduino nano</h2>
+		<hr/>
+		<p>	La placa Arduino Nano es una placa de prueba pequeña y completa basada en ATmega328. Tiene funcionalidad similar al modelo Arduino Duemilanove, pero en un módulo DIP. Solo carece de jack de alimentación DC y funciona con un cable Mini-B USB en lugar de uno estándar. Las características de entrada salida son que cada uno de los 14 pines digitales del Nano pueden ser usados como entrada o salida, usando las funciones pinMode(), digitalWrite(), y digitalRead(). Operan a 5 voltios. Cada pin puede proveer o recibir un máximo de 40mA y poseen una resistencia de pull-up (desconectada por defecto) de 20 a 50 kOhms</p>
+		<hr/>
+		<h2>Arduino uno</h2>				
+		<hr/>
+		<p>		
+			 	El Arduino Uno R3 utiliza el microcontrolador ATmega328. En adición a todas las características de las tarjetas anteriores, el Arduino Uno utiliza el ATmega16U2 para el manejo de USB en lugar del 8U2 (o del FTDI encontrado en generaciones previas). Esto permite ratios de transferencia más rápidos y más memoria. No se necesitan drivers para Linux o Mac (el archivo inf para Windows es necesario y está incluido en el IDE de Arduino). La tarjeta Arduino Uno R3 incluso añade pins SDA y SCL cercanos al AREF. Es más, hay dos nuevos pines cerca del pin RESET. Uno es el IOREF, que permite a los shields adaptarse al voltaje brindado por la tarjeta. El otro pin no se encuentra conectado y está reservado para propósitos futuros. La tarjeta trabaja con todos los shields existentes y podrá adaptarse con los nuevos shields utilizando esos pines adicionales.
+
+		</p>
+		<hr/>
+		<h2>Arduino Mega 2560 y Shield Arduino Ethernet</h2>				
+		<hr/>
+		<p>		
+			 	El Arduino Mega está basado en el microcontrolador ATMega2560. Tiene 54 pines de entradas/salidas digitales (14 de las cuales pueden ser utilizadas como salidas PWM), 16 entradas analógicas, 4 UARTs (puertos serial por hardware), cristal oscilador de 16 Mhz, conexión USB, jack de alimentación, conector ICSP y botón de reset. Incorpora todo lo necesario para que el microcontrolador trabaje; simplemente conéctalo a tu PC por medio de un cable USB o con una fuente de alimentación externa. El Arduino Mega es compatible con la mayoría de los shields diseñados para Arduino Duemilanove, diecimila o UNO. Esta nueva versión de Arduino Mega 2560 adicionalmente a todas las características de su sucesor, el Arduino Mega ahora utiliza un microcontrolador ATMega8U2 en vez del chip FTDI. Esto permite mayores velocidades de transmisión por su puerto USB y no requiere drivers para Linux o MAC (archivo inf es necesario para Windows) además ahora cuenta con la capacidad de ser reconocido por el PC como un teclado, mouse, joystick, etc.
+
+
+
+		</p>
+		<p>
+			La Arduino Ethernet Shield permite a una placa Arduino conectarse a internet. Se basa en la whiznet chip de ethernet . El Wiznet W5100 ofrece una red (IP) capaz de TCP y UDP. Es compatible con hasta cuatro conexiones de socket simultáneas. El escudo de Ethernet se conecta a una placa Arduino usando encabezados por arrollamiento de hilo largos que se extienden a través del escudo. Esto mantiene la disposición de las clavijas intacta y permite que otro escudo pueda ser apilado en la parte superior. El escudo de Ethernet tiene un estándar de conexión RJ-45, con un transformador de línea integrada y alimentación a través de Ethernet activado. Dispone de una ranura para micro-SD a bordo, que se puede utilizar para almacenar archivos para servir través de la red. Es compatible con todas las placas Arduino / Genuino. El lector de tarjetas micro SD de a bordo es accesible a través de la Biblioteca SD. Cuando se trabaja con esta biblioteca, SS es por el pin 4. La revisión original del escudo contenía una de tamaño completo ranura para tarjetas SD; esto no es compatible. El escudo también incluye un controlador de reajuste, para asegurar que el módulo Ethernet W5100 se restablece correctamente en el encendido. Las revisiones anteriores del escudo no eran compatibles con la Mega y tenía la necesidad de restablecer manualmente después del encendido.
+		</p>
+		<hr/>
+		<h2>Sensor de movimiento y presencia</h2>				
+		<hr/>
+		<p>		
+			En el mercado hay mucha variedad de sensores de movimiento y de presencia, pero para nuestro montaje he instalación basándonos en Arduino hay uno que es el más utilizado y es el PIR HC-SR501.
+			Este sensor detecta movimiento por cambios en el infrarrojo. Es el sensor habitual para detectar intrusiones en áreas cerradas o para encender la luz al pasar sin necesidad de interruptor. Puede manejar directamente un pequeño relé sin necesidad de micro controlador o leerse desde un Arduino o similar para formar una red de sensores múltiples.
+		</p>
+		<hr/>
+		<h2>Sensor de ultrasonidos</h2>				
+		<hr/>
+		<p>		
+			El sensor de ultrasonidos se enmarca dentro de los sensores para medir distancias o superar obstáculos, entre otras posibles funciones. En este caso vamos a utilizarlo para la medición de distancias. Esto lo consigue enviando un ultrasonido (inaudible para el oído humano por su alta frecuencia) a través de uno de la pareja de cilindros que compone el sensor (un transductor) y espera a que dicho sonido rebote sobre un objeto y vuelva, retorno captado por el otro cilindro. Este sensor en concreto tiene un rango de distancias sensible entre 3cm y 3m con una precisión de 3mm.
+		</p>
+		<hr/>
+		<h2>Sensor de accionamiento mecánico </h2>				
+		<hr/>
+		<p>		
+			La única utilidad que tiene este sensor y de hecho esta creado específicamente para ese fin es controlar el nivel de un fluido como puede ser de un final de carrera la posición de algo que queremos que detenga su movimiento. No esta creado exclusivamente para trabajar con un microcontrolador ya que soporta hasta 230v. Este sensor es un sensor de tipo pasivo ya que estando en su posición de reposo no acciona nada ya que su contacto interno está abierto, dispone de 2 partes, la parte que se instala mediante un racor a la superficie del tanque y la parte móvil que es la flotante, cuando esta se pone en línea con la fija se cierra el contacto.
+		</p>
+		<hr/>
+		<h2>Sensor de humedad  </h2>				
+		<hr/>
+		<p>		
+			Es un sensor que utiliza la conductividad entre sus 2 terminales o electrodos para medir parámetros relacionados con el agua y así con su porcentaje de humedad dependiendo de su instalación. Su funcionamiento se basa en que emite una pequeña corriente entre sus terminales y esta depende de un extremo al otro de la resistencia de la tierra y esta a su vez de la humedad , por lo que si la humedad aumenta la corriente también ya que los electrones lo tienen más fácil para pasar de un extremo al otro.
+		</p>
+		<hr/>
+		<h2>Foto resistencia ldr  </h2>				
+		<hr/>
+		<p>		
+			Un foto resistor o fotorresistencia es un componente electrónico cuya resistencia disminuye con el aumento de intensidad de luz incidente. Puede también ser llamado fotoconductor, célula fotoeléctrica o resistor dependiente de la luz, cuyas siglas, LDR, se originan de su nombre en inglés light-dependent resistor.
+		</p>
+		<hr/>
+		<h2>ID-12LA Inovations </h2>				
+		<hr/>
+		<p>		
+			 Este módulo receptor de radiofrecuencia fue el primer módulo que se probó en el proyecto, pero no tuvo gran éxito ya que era un poco inestable a la lectura de los tags. Es un módulo más caro que el que se ha utilizado ya que es mucho más robusto y según el fabricante detecta los tags a una distancia de 12 cm ya que posee una antena que posibilita esta distancia .
+		</p>
+		<hr/>
+		<h2>RFID RC522</h2>				
+		<hr/>
+		<p>		
+			El lector está basado en el típico chip MFRC522 para lectura y escritura de tags RFID El chip MFRC522. Da soporte a la lectura y escritura de los tags en diferentes condiciones y con control de errores, de una forma sencilla, aunque no puede identificar más que un tag a la vez, a diferencia de otros lectores más profesionales, y requiere que la distancia de lectura sea de una par de centímetros a lo sumo como ya se ha comentado, pero es lo que tiene ser más barato que sus competidores. La tarjeta presenta un interface SPI para comunicar nuestro Arduino con el MFRC522 y no tiene más dificultad. De hecho creo que os sorprenderá ver lo fácil que resulta leer estas etiquetas RFID.
+		</p>
+		<hr/>
+		<h2>Optoaclopadores </h2>				
+		<hr/>
+		<p>		
+			Un relé es un dispositivo electromecánico que funciona como interruptor controlado por un circuito eléctrico en el que por medio de una bobina o electroimán, se acciona un juego de contactos que permiten abrir o cerrar otros circuitos eléctricos.
+			[1] Cuatro leds que indican el estado de la entradas [2] Un jumper selector para la alimentación de los relés [3] Cuatro opto acopladores del tipo FL817C [4] Cuatro diodos de protección [5] Cuatro relés marca SONGLE con bobinas de 5V y contactos capaces de controlar hasta 10 Amperes en una tensión de 250V [6]Cuatro borneras, con tres contactos cada una (Común, Normal abierto y Normal cerrado). [7] Para las salidas de los relés
+
+
+		</p>
+		</div>
+		<br class="clear" />
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://domoarduino.herokuapp.com/sitemap.xml
+ 

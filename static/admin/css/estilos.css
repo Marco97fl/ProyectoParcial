@@ -21,7 +21,7 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 .col6{color:#98989A; background-color:#2D2B2B; border-top:1px solid #D51D29;}
 .col6 a{color:#CCCCCC; background-color:#2D2B2B;}
 .col7, .col7 a{color:#605B5B; background-color:#333333;}
-
+.col8{color:#98989A; background-color:skyblue; border-top:1px solid #D51D29;}
 /* ----------------------------------------------Generalise------------------------------------- */
 
 #topbar, #header, #topnav, #intro, #breadcrumb, #container, #footer, #copyright{display:block; position:relative; width:960px; margin:0 auto;}
@@ -41,17 +41,17 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 #header .fl_left{display:block; float:left; width:400px;}
 #header .fl_right{display:block; float:right; width:468px;}
 #header h1{margin:0; font-size:36px; border:none;}
-#header h1 a{	font-size: calc(1.1em + 0.9vw);
-	font-weight: 700;
-	letter-spacing: .01em;
-	padding: 10px 0 0 4.5rem;
-	text-shadow: .05em .05em .05em #111;color: #c51031 ; background-color:#2981cf;}
+#header h1 a{ font-size: calc(1.1em + 0.9vw);
+  font-weight: 700;
+  letter-spacing: .01em;
+  padding: 10px 0 0 4.5rem;
+  text-shadow: .05em .05em .05em #111;color: #c51031 ; background-color:#2981cf;}
 
  #eslogan{
- 	font-style: italic;
- 	font-size: 25px;
- 	color:#0d0d0d;
- 	text-align: center;
+  font-style: italic;
+  font-size: 25px;
+  color:#0d0d0d;
+  text-align: center;
  }
 
 
@@ -62,7 +62,47 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 #content{display:block; float:left; width:600px;}
 
 .imgl{
-	float: left;
+  float: left;
+}
+
+.containerImage {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  margin:auto;
+  align-self: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.containerImage:hover .overlay {
+  opacity: 1;
+}
+
+.textImage {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 /* ----------------------------------------------Column------------------------------------- */
@@ -75,34 +115,46 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 
 
 footer section {
-	width:405px;
-	float:left;
-	padding:10px;
-	display: inline;
+  width:405px;
+  float:left;
+  padding:10px;
+  display: inline;
 }
 
 footer #acerca-de, #recomendaciones {
-	font-family:Arial, Helvetica, Sans-serif;
-	font-size:12px;
-	color:#919191;
-	text-align:justify;
-	line-height:20px;
+  font-family:Arial, Helvetica, Sans-serif;
+  font-size:12px;
+  color:#919191;
+  text-align:justify;
+  line-height:20px;
 
 }
 
 #switchp{
-    color: black;
+    color: white;
 }
-	.est{
+  .est{
 font-family:sourcesans-light;
-	font-size:20px;
-	color:#fff;
-	margin-bottom:5px;
+  font-size:20px;
+  color:#fff;
+  margin-bottom:5px;
 
-	}
+  }
 
 .fori{
-	display: inline;
+  display: inline;
+}
+
+
+  .lis{
+font-family:sourcesans-light;
+  font-size:20px;
+  color:#8f1212;
+  margin-bottom:5px;
+
+  }
+#t,#g,#lc,#fc{
+  display: block;
 }
 
 
@@ -141,7 +193,7 @@ font-family:sourcesans-light;
 
 
 
-	.switch {
+  .switch {
   position: relative;
   display: inline-block;
   width: 60px;

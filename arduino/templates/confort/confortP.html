@@ -1,5 +1,6 @@
-
 {% extends 'base/base.html' %}
+{% load static %}
+{% load staticfiles %}
 {% block title %} Confort {% endblock %}
 {% block content %}
 <div class="wrapper col5">
@@ -30,7 +31,7 @@
 
 			</ul>
 			este es el aspecto del montaje funcionando</p>
-		<img src="imagenes/1.PNG"/>
+		<img src="{% static 'admin/img/1c.PNG' %}"  width="700" alt="460">	
 		<p>		
 			Nuestro tipo de arquitectura es de tipo centralizada, como ya se comentó en el apartado de
 			tipología de arquitectura, esta es la instalación, en la que los elementos que vamos a
@@ -49,11 +50,11 @@
 			está conectado al arduino y cuando se pulse , este lo leerá y nos activara la bomba de agua
 			que tenemos introducida dentro del tanque , durante 1,45 min que es el tiempo que tarda
 			en llenarse una garrafa de agua de 25l con el caudal que nos da esta pequeña bomba.</p>	
-		<img src="imagenes/2.PNG"/>			
+		<img src="{% static 'admin/img/2c.PNG' %}"  width="700" alt="460">			
 		<p>
 			Aquí tenemos centralizada lo que seria la parte de potencia, donde tenemos la fuente de
 			alimentacion de 24v , para alimentar el rele de la electrovalvula ya que esta funciona a 24 v en cc.</p>	
-		<img src="imagenes/3.PNG"/>		
+		<img src="{% static 'admin/img/3c.PNG' %}"  width="700" alt="460">	
 		<p>
 			la electrovalvula por un lado conectada al filtro de osmosis y por el
 			otro a su rele.El otro rele es para la activacion de la bomba de agua y esta conecta a 230v el ac.Estos 2 reles claro esta, estan gobernados por la señal de arduino.
@@ -62,18 +63,18 @@
 			de la instalacion , se unificaron las mallas de los cables y
 			se llevaron a tierra o sea a la pared de la casa a traves del cable marron que se aprecia en la
 			siguiente imagen.</p>
-		<img src="imagenes/4.PNG"/>					
+		<img src="{% static 'admin/img/4c.PNG' %}"  width="700" alt="460">				
 		<p>
 			Aquí tendríamos el sensor de ultrasonidos conectado a la descalcificadora, el cual nos manda
 			la información al arduino midiendo la distancia desde donde se encuentra el y donde está
 			la sal , cuando esta distancia supera los 40 cm , el arduino nos imprimirá en la pantalla que
 			nos falta sal, como se aprecia en la captura anterior de la caja de la lcd..</p>
 		
-		<img src="imagenes/5.PNG"/>	
+		<img src="{% static 'admin/img/5c.PNG' %}"  width="700" alt="460">	
 		<hr/>
 		<h2>Esquema de montaje</h2>
 		<hr/>
-		<img src="imagenes/6.PNG"/>		
+		<img src="{% static 'admin/img/6c.PNG' %}"  width="700" alt="460">	
 		<hr/>
 
 
@@ -83,7 +84,7 @@
 			dispositivos a controlar, pues bien si lo que queremos es subir o bajar la persiana , basta
 			con presionar su circuito y desconectarlo para que la persiana se quede a la altura que
 			deseamos.</p>
-		<img src="imagenes/7.PNG"/>	
+		<img src="{% static 'admin/img/7c.PNG' %}"  width="350" alt="230">	
 		<hr/>
 		<h2>Control de iluminacion</h2>
 		<hr/>
@@ -91,7 +92,7 @@
 			dispositivos a controlar, pues bien si lo que queremos es encender o apagar las luces, basta
 			con presionar su circuito y desconectarlo para que la luz cambie de estado
 																						.</p>
-		<img src="imagenes/8.PNG"/>	
+		<img src="{% static 'admin/img/8c.PNG' %}"  width="350" alt="230">	
 
 		<hr/>
 		<h2>Control de Aire acondicionado</h2>
@@ -100,7 +101,7 @@
 			acondicionado solo lo podemos gobernar para encenderlo y apagarlo no para cambiar de
 			modo , velocidad etc, esto se debe a que solo actuamos sobre la tensión que lo alimenta 
 																						.</p>
-		<img src="imagenes/9.PNG"/>		
+		<img src="{% static 'admin/img/9c.PNG' %}"  width="350" alt="230">		
 		</div>
 		<br class="clear" />
 	</div>

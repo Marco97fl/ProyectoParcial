@@ -159,6 +159,60 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 
  }
 
+docxml{
+
+}
+cuerpo{
+  display: block;
+    font-size: 20px;
+    text-indent: 10px;
+    background: #212f3c;
+    color: white;
+}
+
+tem{
+color: #c51031;
+font-size: 38px;
+text-align: center;
+display: block;
+}
+
+DescripcionS{
+  display: block;
+  font-size: 20px;
+  padding: 10px;
+}
+
+
+separador{
+  display: block;
+  color: #212f3c;
+}
+servicio{
+
+}
+nombre{
+  display: table-row;
+  background:#176dba;
+}
+descripcion,detalle{
+display: table-cell;
+}
+componentes{
+  display: table-row;
+}
+confort{
+display: table-cell;
+}
+seguridad{
+  display: table-cell;
+}
+ti{
+  display: table-row;
+}
+precio{
+  display: table-row;
+}
 
 
 /* ----------------------------------------------Footer------------------------------------- */

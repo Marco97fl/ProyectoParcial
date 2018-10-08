@@ -1,0 +1,40 @@
+{% extends 'base/base.html' %}
+<<<<<<< HEAD
+{% load static %}
+=======
+{% load staticfiles %}
+>>>>>>> 39cb4d4f0016682c1141d979cbc430ec682f3501
+{% block title %} Contactanos {% endblock %}
+{% block content %}
+<div class="wrapper col5">
+	<div id="container">
+    	<div id="content">
+			<div style="display: inline;">
+				<h1>Get In Touch</h1>
+				<div>
+					<p style="font-size:  15px;">Email: <b>domoarduinovida@gmail.com</b> </p>
+					<p style="font-size:  15px;">Puedes contactarnos en nuestras Redes Sociales:</p>
+					<div class="fori"><a href="https://www.facebook.com/domoarduino" target="_blank"><i class="fab fa-facebook-square fa-5x" style="color:  #21618c;"></i></a></div>
+			        <div class="fori" ><a href="https://instagram.com/domoarduino" target="_blank"><i class="fab fa-instagram fa-5x"></i></a></div>
+			        <div class="fori"><a href="https://twitter.com/DomoArduino" target="_blank"><i class="fab fa-twitter fa-5x" style="color: #85c1e9;"></i></a></div>
+				</div>
+				<div>
+					<p style="font-size:  15px;">Puedes enviarnos un correo para obtener mas información acerca de nuestros servicios en el siguiente formulario, agrega tu email para que podamos responderte.</p>
+					<form name="form_contactanos" id="form_contactanos" action="GET">
+					<table>
+						<tr><td>Nombre:</td><td><input type="text" name="nombre" size="30" id="nombre" pattern="[a-zA-Z_]{5,30}"></td></tr>
+						<tr><td>Apellidos:</td><td><input type="text" name="apellidos" size="30" id="apellidos" pattern="[a-zA-Z_]{5,30}"></td></tr>
+						<tr><td>Email:</td><td><input type="text" name="email" size="30" id="email" pattern="(\w+@[a-zA-Z_]+?\.[a-zA-Z_]{2,6})"></td></tr>
+						<tr><td>Asunto:</td><td><input type="text" name="asunto" size="30" id="asunto" pattern="[a-zA-Z_]{5,30}"></td></tr>
+						<tr><td>Cuerpo:</td><td><textarea name="cuerpo" rows="10" cols="37" placeholder="Escribe aquí tu mensaje..."></textarea></td></tr>
+						<tr><td><input class="button button1"type="submit" id="Enviar" value="Enviar"></td></tr>
+					</table>
+			</form>
+				</div>
+			</div>
+		</div>
+		<br class="clear" />
+	</div>
+</div>
+
+{% endblock %}

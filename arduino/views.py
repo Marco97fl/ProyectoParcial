@@ -32,3 +32,6 @@ class servidorB(TemplateView):
 
 class encuesta(TemplateView):
 	template_name='Encuesta/encuesta.html'
+
+class Contactanos(TemplateView):
+	template_name='Contactanos/contactanos.html'

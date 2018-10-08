@@ -40,7 +40,7 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 #header{padding:20px 0;background: #2981cf}
 #header h1, #header p{margin:0; padding:0;}
 #header .fl_left{display:block; float:left; width:400px;}
-#header .fl_right{display:block; float:right; width:468px;}
+#header .fl_right{display:block; }
 #header h1{margin:0; font-size:36px; border:none;}
 #header h2 a{ font-size: calc(1.1em + 0.9vw);
   font-weight: 700;
@@ -52,8 +52,8 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
   font-style: italic;
   font-size: 25px;
   color:#0d0d0d;
-  text-align: center;
  }
+
 
 
 /* ----------------------------------------------Content------------------------------------- */

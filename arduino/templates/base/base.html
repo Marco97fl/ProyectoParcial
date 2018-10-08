@@ -5,29 +5,25 @@
 <head>
 {% load static %}
 {% block head %}
-  <meta name="google-site-verification" content="VKL7HBsLOodsVx798VaxfzOaKRlJ9l0_S9tFjBWXB0c" />
-  <!--Verificacion de Bing-->
-  <meta name="msvalidate.01" content="CACB96B2FAF7BE4F88FB788D7632CC82" />
+<meta name="google-site-verification" content="VKL7HBsLOodsVx798VaxfzOaKRlJ9l0_S9tFjBWXB0c" />
   <meta charset="UTF-8">
   <meta name="autor" content="Estudiantes de la Universidad de El Salvador-Materia TPI115" />
-  <meta name="keywords" content="Proyectos con Arduino"/>
-  <!--Para un mejor SEO-->
-  <meta name="description" content="Domoarduino, domotica, ofrece informacion de tecnologias creadas con arduino para hacer nuestra casa mas tecnologica.">
-  <meta http-equiv="Content-Language" content="es"/>
+  <meta name="keywords" content="DomoArduino, arduino, domotica, confort, servidor, microprocesador"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:site" content="@DomoArduino"/>
   <meta name="twitter:creator" content="@Marcofl97"/>
   <meta name="twitter:url" content="http://domoarduino.herokuapp.com/"/>
   <meta name="twitter:title" content="DomoArduino"/>
-  <meta name="twitter:description" content="Pagina que ofrece informacion de tecnologias creadas con arduino para hacer nuestra casa mas tecnologica."/>
+  <meta name="twitter:description" content="Pagina que ofrece informacion de domotica y tecnologias creadas con arduino para hacer nuestra casa mas tecnologica."/>
   <meta name="twitter:image" content="http://domoarduino.herokuapp.com/static/admin/img/logo_oficial.png">
   <meta property="og:title" content="DomoArduino"/>
   <meta property="og:type" content="website" />
   <meta property="og:url" content="http://domoarduino.herokuapp.com/" />
   <meta property="og:description" content="Pagina que ofrece informacion de tecnologias creadas con arduino para hacer nuestra casa mas tecnologica."/>
   <meta property="og:image" content="http://domoarduino.herokuapp.com/static/admin/img/logo_oficial.png"/>
-  <meta property="og:locale" content="es" />
-  <meta property="og:site_name" content="domoarduino" />
   <meta property="fb:admins" content="314310882486070" /> 
   <meta property="fb:app_id"    content="271526793473885"/>
 
@@ -124,10 +120,10 @@ window.___gcfg = {lang: 'es'};
 <div class="wrapper col2">
   <div id="header">
     <div class="fl_left">
-      <h1><a href="{% url 'home' %}">DomoArduino</a></h1>
+      <h2><a href="{% url 'home' %}">DomoArduino</a></h2>
       <p id="eslogan"><b>Domotica a un par de clicks</b></p>
     </div>
-    <div class="fl_right"> <a href="{% url 'home' %}"><img src="{% static 'admin/img/logo_oficial.png' %}" width="111" alt="Logotipo de la pagina" /></a> </div>
+    <div class="fl_right"> <a href="{% url 'home' %}"><img src="{% static 'admin/img/logo_oficial.png' %}" width="111" alt="" /></a> </div>
     <br class="clear" />
   </div>
 </div>
@@ -135,34 +131,29 @@ window.___gcfg = {lang: 'es'};
 <div class="wrapper col3">
   <div id="topnav">
     <ul>
-      <li><a class="menu" href="{% url 'componentes' %}"><i class="fas fa-toolbox"></i> Componentes</a></li>      
+      <li><a class="menu" href="{% url 'componentes' %}"><i class="fas fa-toolbox"></i> Componentes</a>        
+      </li>
+        
 
-      <li>
-        <a class="menu" href="{% url 'seguridadB' %}"><i class="fas fa-lock"></i> Seguridad</a>
+      <li><a class="menu" href="{% url 'seguridadB' %}"><i class="fas fa-lock"></i> Seguridad</a>
         <ul>
-          <li><a class="menu" href="{% url 'seguridad' %}">Descripcion</a></li>
+          <li><a href="{% url 'seguridad' %}">Descripcion</a></li>
         </ul>
-      </li>      
+      </li>
+      
 
-      <li>
-        <a class="menu" href="{% url 'confort_diego' %}"><i class="fas fa-child"></i> Confort</a>
+      <li><a class="menu" href="{% url 'confort_diego' %}"><i class="fas fa-child"></i> Confort</a>
         <ul>
           <li><a  href="{% url 'confortP' %}">Descripcion</a></li>
         </ul>
       </li>
-
       <li><a class="menu" href="{% url 'servidorB' %}"><i class="fas fa-server"></i> Servidor Arduino</a>
         <ul>
-          <li><a  href="{% url 'servidorP' %}"> servidor web</a></li>          
+          <li><a  href="{% url 'servidorP' %}"> servidor web</a></li>
+          
         </ul>
       </li>
-
-      <li class="last">
-        <a class="menu" href="#"><i class="fas fa-users"></i> Contactanos</a>
-      </li>
-      <li class="last">
-        <a class="menu" href="{% url 'encuesta' %}"><i class="fas fa-users"></i> Encuestas</a>
-      </li>
+      <li class="last"><a class="menu" href="#"><i class="fas fa-users"></i> Contactanos</a></li>
     </ul>
     <br class="clear" />
   </div>
@@ -171,7 +162,6 @@ window.___gcfg = {lang: 'es'};
     
 
 {% block content %}
-<!--    
   <div class="content">
   
     
@@ -192,7 +182,7 @@ window.___gcfg = {lang: 'es'};
 
 <div class="wrapper col5">
   <div id="container">
- 
+<!--     
     <div id="content">
       <h2>DomoArduino</h2>
       <img class="imgl" src="{% static 'admin/img/dom.jpg' %}" alt="" width="300" />
@@ -264,10 +254,10 @@ window.___gcfg = {lang: 'es'};
       </section>
       <section id="redes-s">
         <h3 class="est"> Siguenos en redes sociales</h3>
-        <div class="fori" ><a href="https://www.facebook.com/domoarduino" target="_blank"><img src="{% static 'admin/img/f.ico' %}"  width="40" alt="logo de facebook"></a></div>
-        <div class="fori" ><a href="https://instagram.com/domoarduino" target="_blank"><img src="{% static 'admin/img/logo_instagram.ico' %}"  width="40" alt="logo de instagram"></a></div>
-        <div class="fori"><a href="https://twitter.com/DomoArduino" target="_blank"><img src="{% static 'admin/img/t.ico' %}"  width="40" alt="logo de twittert"></a></div>
-        <!--<div class="fori"><a href=""><img src="{% static 'admin/img/y.ico' %}"  width="50" alt=""></a></div>-->
+        <div class="fori" ><a href="https://www.facebook.com/domoarduino" target="_blank"><img src="{% static 'admin/img/f.ico' %}"  width="40" alt=""></a></div>
+        <div class="fori" > <a href=""><img src="{% static 'admin/img/w.ico' %}"  width="40" alt=""></a></div>
+        <div class="fori"><a href=""><img src="{% static 'admin/img/t.ico' %}"  width="40" alt=""></a></div>
+        <div class="fori"><a href=""><img src="{% static 'admin/img/y.ico' %}"  width="50" alt=""></a></div>
       </section>
     <br class="clear" />
   </div>

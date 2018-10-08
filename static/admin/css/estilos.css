@@ -25,7 +25,7 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 /* ----------------------------------------------Generalise------------------------------------- */
 
 #topbar, #header, #topnav, #intro, #breadcrumb, #container, #footer, #copyright
-{display:block; position:relative; width:960px; margin: auto;}
+{display:block; position:relative; width:1070px; margin: auto;}
 
 /* ----------------------------------------------TopBar------------------------------------- */
 

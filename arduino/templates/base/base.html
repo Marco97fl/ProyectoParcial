@@ -60,10 +60,6 @@
         arrayMenu[2].style.color = "#A9A9A9";
         arrayMenu[3].style.color = "#A9A9A9";
         arrayMenu[4].style.color = "#A9A9A9";
-        var arrayFab = document.getElementsByClassName("fab");
-        arrayFab[0].style.backgroundColor = "#000";
-        arrayFab[1].style.backgroundColor = "#000";
-        arrayFab[2].style.backgroundColor = "#000";
    } 
    else{
       document.getElementsByTagName("body")[0].style.backgroundColor = "#fff";
@@ -79,43 +75,7 @@
         arrayMenu[2].style.color = "#fff";
         arrayMenu[3].style.color = "#fff";
         arrayMenu[4].style.color = "#fff";
-       var arrayFab = document.getElementsByClassName("fab");
-        arrayFab[0].style.backgroundColor = "#fff";
-        arrayFab[1].style.backgroundColor = "#fff";
-        arrayFab[2].style.backgroundColor = "#fff";
    }
-   if (window.location.pathname == "/contactanos/") {
-  
-    var nombre = document.getElementById("nombre");
-    var apellidos = document.getElementById("apellidos");
-    var email = document.getElementById("email");
-    email.addEventListener("input",validar,false);
-    nombre.addEventListener("input",validar,false);
-    apellidos.addEventListener("input",validar,false);
-    validar();
-   function validar(){
-    if (nombre.value=="" && apellidos.value=="") {
-      nombre.setCustomValidity("Introduce nombre o apellido");
-      nombre.style.background="#FFDDDD";
-      apellidos.style.background="#FFDDDD";
-    }else{
-      nombre.setCustomValidity("");
-      nombre.style.background="#FFFFFF";
-      apellidos.style.background="#FFFFFF";
-
-    }
-
-    if(email.value==""){
-      email.setCustomValidity("Introduce tu email para poder corresponder.");
-      email.style.background="#FFDDDD";
-    }else{
-      email.setCustomValidity("");
-      email.style.background="#FFFFFF";
-    }
-
-   
-  }
-}
 }  
 </script>
 

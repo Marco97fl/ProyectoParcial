@@ -42,7 +42,7 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 #header .fl_left{display:block; float:left; width:400px;}
 #header .fl_right{display:block; float:right; width:468px;}
 #header h1{margin:0; font-size:36px; border:none;}
-#header h1 a{ font-size: calc(1.1em + 0.9vw);
+#header h2 a{ font-size: calc(1.1em + 0.9vw);
   font-weight: 700;
   letter-spacing: .01em;
   padding: 10px 0 0 4.5rem;

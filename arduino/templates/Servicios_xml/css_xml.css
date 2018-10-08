@@ -1,0 +1,99 @@
+docxml{
+display:block;
+background-color:#212f3c;
+color:black;
+color: white;
+font-size: 14px;
+
+}
+titulo{
+	background: #2981cf;
+  font-size: calc(2.5em + 1.3vw);
+  font-weight: 700;
+  letter-spacing: .01em;
+  text-shadow: .05em .05em .05em #111;color: #c51031;
+  display: block;
+  text-align: center;
+}
+eslogan{
+	background: #2981cf;
+  font-style: italic;
+  text-align: center;
+  font-size: 25px;
+  color:#0d0d0d;
+  text-align: center;
+  display: block;
+    text-shadow: .02em .02em .02em #111;
+}
+cuerpo{
+	font-size: calc(0.7em + 0.4vw);
+	color: white;
+	display: block;
+}
+logo{
+
+}
+
+a {
+    text-decoration: underline;
+}
+
+tem{
+color: #c51031;
+font-size: 28px;
+text-align: center;
+display: block;
+}
+
+fon
+}
+DescripcionS{
+	display: block;
+}
+
+
+separador{
+	
+	display: block;
+	color: #212f3c;
+}
+
+paquete{
+	display: table-row;
+	background: #2981cf;
+	width: 100px;
+}
+des,area{
+	display: table-row;
+
+	background: #e72137;
+
+}
+detalle,deta{
+	display: table-cell;
+}
+
+servicio{
+
+}
+nombre{
+	display: table-row;
+}
+descripcion,detalle{
+display: table-cell;
+}
+componentes{
+	display: table-row;
+}
+confort{
+display: table-cell;
+}
+seguridad{
+	display: table-cell;
+}
+ti{
+	display: table-row;
+}
+precio{
+	display: table-row;
+}

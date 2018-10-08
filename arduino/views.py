@@ -35,3 +35,6 @@ class encuesta(TemplateView):
 
 class Contactanos(TemplateView):
 	template_name='Contactanos/contactanos.html'
+
+class Precios(TemplateView):
+	template_name='Servicios_xml/precios.xml'

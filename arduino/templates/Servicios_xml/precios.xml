@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="css_xml.css" ?>
+
+<docxml>
+	<Encabezado>
+		<titulo> DomoArduino
+			<eslogan>Domotica a un par de clicks
+			</eslogan>
+			<logo><image imageUrl="_client_pic1.png" link="asfunction:link"/> 
+			</logo>
+		</titulo>
+	</Encabezado>
+    <Cuerpo> 
+      <tem>Precios de nuestros servicios ofrecidos</tem>
+      <separador>.</separador>
+        <DescripcionS>
+          somos una empresa enfocada en la modernizacion y automatizacion de el diario vivir de las personas, enfocandonos en el area domotica de nuestros hogares,
+          te ofrecemos una extensa area de servicios domoticos , en el area de confort y seguridad.
+        </DescripcionS>
+        <DescripcionS>
+          a continuacion te mostramos los kit de instalacion disponibles, y sus respectivos precios
+        </DescripcionS>
+        <DescripcionS>
+          todos los paquetes incluyen aplicacion android y servidor de arduino (restrincciones aplican)
+        </DescripcionS>
+        
+
+<separador>.</separador>
+
+        <servicio codiigo="01">
+          <nombre>
+          Paquete semi-basico 
+          </nombre>
+          <descripcion>Descripcion</descripcion>
+          <detalle>
+          Automatizacion de ventanas y detecciones de movimientos fisicos dentro del hogar y alerta 
+          </detalle>
+          <componentes>Este servicio incluye:</componentes>
+          	<ti>
+          		Confort
+          		            <confort>
+            Automatizacion de persianas
+            </confort> 
+          	</ti>
+           	<ti>
+          		seguridad
+          		            <seguridad>
+            Sensores de movimiento y sistema de alarma
+            </seguridad>
+          	</ti>
+          <precio>
+          El costo de instalacion es de $50
+          </precio>  
+        </servicio>
+
+
+<separador>.</separador>
+
+        <servicio codiigo="02">
+         <nombre>
+          paquete basico
+          </nombre>
+
+          <descripcion>Descripcion</descripcion>
+          <detalle>
+          una perfecta combinacion de un control de luces, ventas y seguridad en el hogar
+</detalle>
+          <componentes>Incluye:          </componentes>
+          	<ti>Confort
+            <confort>
+            Automatizacion de persianas y control de iluminacion
+            </confort> 
+            </ti>
+            <ti> Seguridad
+            <seguridad>
+            Sensores de movimiento, sistema de alarma, barrera de 
+            rayos infrarojos, sensor de sonido
+            </seguridad>
+        </ti>
+
+          <precio>
+          El costo de instalacion es de $100
+          </precio>
+        </servicio>
+        
+ <separador>.</separador>
+        <servicio codiigo="03">
+          <nombre>
+          paquete  seguridad
+          </nombre>
+          <descripcion>Descripcion</descripcion>
+          <detalle>
+          este paquete de instalacion es enfocado al area de automatizacion de la seguridad en el hogar o lugar de trabajo
+          </detalle>
+          <componentes>Incluye          </componentes>
+            <ti>Seguridad
+            <seguridad>
+            rayos infrarrojos, sensor de movimiento, sensor de sonido, sistema de alarma, sistema de vigilancia cctv, alarma contra incendios, control de acceso a hogar mediante rfid y estados por voz
+            </seguridad>
+</ti>
+          <precio>
+          El costo de instalacion es de $200
+          </precio>
+        </servicio>
+        
+
+<separador>.</separador>
+
+        <servicio codiigo="04">
+          <nombre>
+          paquete todo en uno
+          </nombre>
+          <descripcion>Descripcion</descripcion>
+          <detalle>
+           este paquete incluye todas las funcionalidades que ofrecemos, en el area de confort y seguridad
+          </detalle>
+          <componentes>Incluye          </componentes>
+          <ti>Confort
+            <confort>
+            automatizacion de persianas, control de iluminacion , control de llenado y vaciado del tanque de agua y nivel de sal descalcificadora
+            </confort>
+        </ti>
+        <ti>Seguridad
+            <seguridad>
+            rayos infrarrojos, sensor de movimiento, sensor de sonido, sistema de alarma, sistema de vigilancia cctv, alarma contra incendios, control de acceso a hogar mediante rfid y estados por voz
+            </seguridad>
+        </ti>
+
+          <precio>
+          El costo de instalacion es de $350
+          </precio>
+        </servicio>
+        
+    </Cuerpo>
+</docxml>

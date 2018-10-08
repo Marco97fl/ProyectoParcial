@@ -1,5 +1,11 @@
+
+{% extends 'base/base.html' %}
+{% block title %} Seguridad{% endblock %}
+{% block content %}
+{% load static %}
+
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<?xml-stylesheet type="text/css" href="css_xml.css" ?>
+
 
 <docxml>
 	<Encabezado>
@@ -133,3 +139,4 @@
         
     </Cuerpo>
 </docxml>
+{% endblock %}

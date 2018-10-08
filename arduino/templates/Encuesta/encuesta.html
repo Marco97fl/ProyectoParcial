@@ -1,0 +1,92 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% load staticfiles %}
+{% block title %} Confort {% endblock %}
+{% block content %}
+<div class="wrapper col5">
+  <div id="container">
+    <div id="content">
+		<p>	Para nosotros es muy importante que nuestros servicios sean eficientes y de calidad para ti,
+				por lo tanto puedes llenar la siguiente escuesta y posteriormente darnos tu opinion,alguna sugerencia o dejarnos un comentario acerca de lo que te ha parecido
+				nuestra pagina y el servicio que te hemos brindado</p>
+			<br/>
+		<form>
+			<div>
+		        <label>1-Te parecio importante nuestra pagina web?:</label>
+		        <p>	
+		        	si <input type="radio" /><br />
+		        	no <input type="radio" /><br />
+		        </p>
+		       	<br/> 
+		        <label>2-Piensas que lo domotica es un medio que puede mejorar la comodidad en nuestros hogares?:</label>
+		        <p>	
+		        	si <input type="radio" /><br />
+		        	no <input type="radio" /><br />		        	
+		        </p>
+		        <br/>
+		        <label>3-En el area de seguridad, te parece que los servicios de domotica son un servicio que te garantiza seguridad total? :</label>
+		        <p>	Por favor valoralo , del 0 al 10
+		        	<label>valoracion</label>
+					<input type="range" min="0" max="10" value="0" onchange="AcDisplay.value=value">
+					<output id="AcDisplay">0</output>        	
+		        </p>
+		        <br/>
+		        
+		        <label>4-Recomendarias nuestros servicios a algun amigo o empresa que conozcas?:</label>
+		        <p>	
+		        	si <input type="radio" /><br />
+		        	no <input type="radio" /><br />		        	
+		        </p>
+		        <br/>
+		        <label>5 -Piensas que lo domotica es un medio que puede mejorar la comodidad en nuestros hogares?:</label>
+		        <p>	
+		        	si <input type="radio" /><br />
+		        	no <input type="radio" /><br />		        	
+		        </p>
+		        <br/>
+		        
+		        <label>6-Como consideras nuestros servicios?</label>
+		        <p>	
+		        	<select name="opciones">
+			     	<option value="1">muy malos</option>
+  					<option value="2">buenos</option>
+  					<option value="3">muy buenos</option>
+  					<option value="4">excelentes</option>
+  					<select/>	        	
+		        </p>
+		        <br/>
+		        <div>
+		    	<input type="submit" value="Enviar encuesta">	
+		    	</div>
+		        <hr/>
+  				
+
+		    </div>
+		    <p>	Puedes brindarnos tus datos, y asi te mantendremos informado de nuestras nuevas actualizaciones!</p>
+		    <p>	si quieres escribenos un comentario o alguna sugerencia</p>
+		    <br/>
+		    <div>
+		        <label>Nombre:</label>
+		        <input type="text" id="nombre" placeholder="Nombre" autofocus/>
+		    </div>
+		    <br/>
+		    <div>
+		        <label>Correo electronico:</label>		        
+		        <input type="email" id="correo" placeholder="ejemplo juanPerez@gmal.com" />
+		    </div>
+		    <br/>
+		    <div>
+		        <label>Comentario:</label>
+		        <textarea id="msg" placeholder="Escriba su comentario"></textarea>
+		    </div>
+		    <br/>
+		    <div>
+		    	<input type="submit" value="Enviar comentario">	
+		    </div>
+		</form>
+
+		</div>
+		<br class="clear" />
+	</div>
+</div>
+{% endblock %}

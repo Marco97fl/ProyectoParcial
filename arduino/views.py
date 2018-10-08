@@ -29,3 +29,6 @@ class seguridadB(TemplateView):
 		
 class servidorB(TemplateView):
 	template_name='servidorB/servidorB.html'
+
+class encuesta(TemplateView):
+	template_name='Encuesta/encuesta.html'

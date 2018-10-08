@@ -125,10 +125,30 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
   border-radius: 5px;
   background-color: #def;
  }
- .parrafo{text-align: justify;}
- .Lab{text-align: center;}
- .Radb{display:inline;}
-
+.parrafo{text-align: justify;padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;}
+.Lab{display: block;
+    padding-top: 2px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+    padding-left: 10px}
+.Radb{display:inline;}
+.bt{ padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.btc{padding-top: 2px;
+    padding-right: 210px;
+    padding-bottom: 2px;
+    padding-left: 210px;
+}
+.b{ padding-top: 2px;
+    padding-right: 25px;
+    padding-bottom: 2px;
+    padding-left: 19px;
+}
  
 
 

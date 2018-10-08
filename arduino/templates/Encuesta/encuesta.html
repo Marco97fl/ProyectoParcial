@@ -13,40 +13,40 @@
 		<form id="formulario" class="formulario" >
 			<div>
 		        <label class="Lab">1-Te parecio importante nuestra pagina web?:</label>
-		        <p>	
+		        <p class="b">	
 		        	si <input class="Radb" type="radio" /><br />
 		        	no <input class="Radb" type="radio" /><br />
 		        </p>
 		       	<br/> 
-		        <label>2-Piensas que lo domotica es un medio que puede mejorar la comodidad en nuestros hogares?:</label>
-		        <p>	
+		        <label class="Lab">2-Piensas que lo domotica es un medio que puede mejorar la comodidad en nuestros hogares?:</label>
+		        <p class="b">	
 		        	si <input class="Radb" type="radio" /><br />
 		        	no <input class="Radb" type="radio" /><br />		        	
 		        </p>
 		        <br/>
-		        <label>3-En el area de seguridad, te parece que los servicios de domotica son un servicio que te garantiza seguridad total? :</label>
-		        <p>	Por favor valoralo , del 0 al 10
+		        <label class="Lab">3-En el area de seguridad, te parece que los servicios de domotica son un servicio que te garantiza seguridad total? :</label>
+		        <p class="b">	Por favor valoralo , del 0 al 10
 		        	<label>valoracion</label>
 					<input type="range" min="0" max="10" value="0" onchange="AcDisplay.value=value">
 					<output id="AcDisplay">0</output>        	
 		        </p>
 		        <br/>
-		        <div class="divP"><label>4-Recomendarias nuestros servicios a algun amigo o empresa que conozcas?:</label></div>
+		        <div class="divP"><label class="Lab">4-Recomendarias nuestros servicios a algun amigo o empresa que conozcas?:</label></div>
 		        
-		        <p>	
+		        <p class="b">	
 		        	si <input class="Radb" type="radio" /><br />
 		        	no <input class="Radb" type="radio" /><br />		        	
 		        </p>
 		        <br/>
-		        <label>5 -Piensas que lo domotica es un medio que puede mejorar la comodidad en nuestros hogares?:</label>
-		        <p>	
+		        <label class="Lab">5 -Piensas que lo domotica es un medio que puede mejorar la comodidad en nuestros hogares?:</label>
+		        <p class="b">	
 		        	si <input class="Radb" type="radio" /><br />
 		        	no <input class="Radb" type="radio" /><br />		        	
 		        </p>
 		        <br/>
 		        
-		        <label>6-Como consideras nuestros servicios?</label>
-		        <p>	
+		        <label class="Lab">6-Como consideras nuestros servicios?</label>
+		        <p class="b">	
 		        	<select name="opciones">
 			     	<option value="1">muy malos</option>
   					<option value="2">buenos</option>
@@ -55,34 +55,35 @@
   					<select/>	        	
 		        </p>
 		        <br/>
-		        <div>
+		        <div class="btc">
 		    	<input class="bt" type="submit" value="Enviar encuesta">	
 		    	</div>
 		        <hr/>
   				
 
 		    </div>
-		    <p>	Puedes brindarnos tus datos, y asi te mantendremos informado de nuestras nuevas actualizaciones!</p>
-		    <p>	si quieres escribenos un comentario o alguna sugerencia</p>
+		    <p class="b">	Puedes brindarnos tus datos, y asi te mantendremos informado de nuestras nuevas actualizaciones!</p>
+		    <p class="b">	si quieres escribenos un comentario o alguna sugerencia</p>
 		    <br/>
-		    <div>
+		    <div class="btc">
 		        <label>Nombre:</label>
 		        <input type="text" id="nombre" placeholder="Nombre" autofocus class="entradasTexto"/>
 		    </div>
 		    <br/>
-		    <div>
+		    <div class="btc">
 		        <label>Correo electronico:</label>		        
 		        <input  class="entradasTexto" type="email" id="correo" placeholder="ejemplo juanPerez@gmal.com" />
 		    </div>
 		    <br/>
-		    <div>
+		    <div class="btc">
 		        <label>Comentario:</label>
 		        <textarea class="entradasTexto" id="msg" placeholder="Escriba su comentario"></textarea>
 		    </div>
 		    <br/>
-		    <div>
-		    	<input type="submit" value="Enviar comentario">	
+		    <div class="btc">
+		    	<input class="bt" type="submit" value="Enviar comentario">	
 		    </div>
+		    <br/>
 		</form>
 
 		</div>

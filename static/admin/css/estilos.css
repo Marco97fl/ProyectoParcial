@@ -115,10 +115,10 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 
 
 .formulario{
+  width: 600px;
     font-size: 16px;
     color: #001F3F;
-    margin-bottom: 20px;
-    margin-left: 20px;
+    margin: auto;
     border-style: groove;
     background-color: HoneyDew  ;}
 .entradasTexto {
@@ -145,6 +145,7 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
     padding-right: 210px;
     padding-bottom: 2px;
     padding-left: 210px;
+    margin: auto;
 }
 .b{
     text-align: center;
@@ -152,7 +153,10 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 #cc{
       border-top:1px solid #1e1e1e;
 }
- 
+ #hh{
+    width: 120px;
+
+ }
 
 
 

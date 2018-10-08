@@ -110,6 +110,28 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 #column{display:block; float:right; width:300px;}
 
 
+/* ----------------------------------------------FormularioEncuesta------------------------------------- */
+
+
+.formulario{
+    font-size: 16px;
+    color: #001F3F;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-style: groove;
+    background-color: HoneyDew  ;}
+.entradasTexto {
+  border-radius: 5px;
+  background-color: #def;
+ }
+ .parrafo{text-align: justify;}
+ .Lab{text-align: center;}
+ .Radb{display:inline;}
+
+ 
+
+
+
 /* ----------------------------------------------Footer------------------------------------- */
 /* ---- FOOTER ---- */
 

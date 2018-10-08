@@ -135,30 +135,34 @@ window.___gcfg = {lang: 'es'};
 <div class="wrapper col3">
   <div id="topnav">
     <ul>
-      <li><a class="menu" href="{% url 'componentes' %}"><i class="fas fa-toolbox"></i> Componentes</a>        
-      </li>
-        
+      <li><a class="menu" href="{% url 'componentes' %}"><i class="fas fa-toolbox"></i> Componentes</a></li>      
 
-      <li><a class="menu" href="{% url 'seguridadB' %}"><i class="fas fa-lock"></i> Seguridad</a>
+      <li>
+        <a class="menu" href="{% url 'seguridadB' %}"><i class="fas fa-lock"></i> Seguridad</a>
         <ul>
-          <li><a href="{% url 'seguridad' %}">Descripcion</a></li>
+          <li><a class="menu" href="{% url 'seguridad' %}">Descripcion</a></li>
         </ul>
-      </li>
-      
+      </li>      
 
-      <li><a class="menu" href="{% url 'confort_diego' %}"><i class="fas fa-child"></i> Confort</a>
+      <li>
+        <a class="menu" href="{% url 'confort_diego' %}"><i class="fas fa-child"></i> Confort</a>
         <ul>
           <li><a  href="{% url 'confortP' %}">Descripcion</a></li>
         </ul>
       </li>
+
       <li><a class="menu" href="{% url 'servidorB' %}"><i class="fas fa-server"></i> Servidor Arduino</a>
         <ul>
-          <li><a  href="{% url 'servidorP' %}"> servidor web</a></li>
-          
+          <li><a  href="{% url 'servidorP' %}"> servidor web</a></li>          
         </ul>
       </li>
-      <li class="last"><a class="menu" href="#"><i class="fas fa-users"></i> Contactanos</a></li>
-      <li class="last"><a class="menu" href="{% url 'encuesta' %}"><i class="fas fa-users"></i> Encuestas</a></li>
+
+      <li class="last">
+        <a class="menu" href="#"><i class="fas fa-users"></i> Contactanos</a>
+      </li>
+      <li class="last">
+        <a class="menu" href="{% url 'encuesta' %}"><i class="fas fa-users"></i> Encuestas</a>
+      </li>
     </ul>
     <br class="clear" />
   </div>

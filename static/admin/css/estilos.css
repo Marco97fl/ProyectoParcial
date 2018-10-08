@@ -18,10 +18,11 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 .col4 a{color:#FFFFFF; background-color:#232323;}
 .col5{color:#666666; background-color:#FFFFFF;}
 .col5 a{color:#D51D29; background-color:#FFFFFF;}
-.col6{color:#98989A; background-color:#2D2B2B; border-top:1px solid #D51D29;}
+.col6{color:#98989A; background-color:#2D2B2B; border-top:1px solid #D51D29; width: 100%;}
 .col6 a{color:#CCCCCC; background-color:#2D2B2B;}
 .col7, .col7 a{color:#605B5B; background-color:#333333;}
-.col8{color:#98989A; background-color:skyblue; border-top:1px solid #D51D29;}
+.col7{width: 100%;}
+.col8{color:#98989A; background-color:skyblue; border-top:1px solid #D51D29; width: 100%;}
 /* ----------------------------------------------Generalise------------------------------------- */
 
 #topbar, #header, #topnav, #intro, #breadcrumb, #container, #footer, #copyright

@@ -13,7 +13,7 @@ div.wrapper{display:block; width:100%; margin:0; text-align:left;}
 div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, div.wrapper h6{margin:0 0 15px 0; padding:0; font-size:20px; font-weight:normal; font-family:Georgia, "Times New Roman", Times, serif;}
 .col1, .col1 a{color:#FFFFFF; background-color:#333335;}
 .col2{color:#FFFFFF; }
-.col3{color:#999999;  border-bottom:1px solid #D51D29;}
+.col3{color:#999999; border-bottom:1px solid #D51D29;}
 .col4{color:black; border-bottom:1px solid #D51D29;background-color:#00ff8a;}
 .col4 a{color:#FFFFFF; background-color:#232323;}
 .col5{color:#666666; background-color:#FFFFFF;}
@@ -24,7 +24,8 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 .col8{color:#98989A; background-color:skyblue; border-top:1px solid #D51D29;}
 /* ----------------------------------------------Generalise------------------------------------- */
 
-#topbar, #header, #topnav, #intro, #breadcrumb, #container, #footer, #copyright{display:block; position:relative; width:960px; margin:0 auto;}
+#topbar, #header, #topnav, #intro, #breadcrumb, #container, #footer, #copyright
+{display:block; position:relative; width:960px; margin: auto;}
 
 /* ----------------------------------------------TopBar------------------------------------- */
 
@@ -32,7 +33,7 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 #topbar p{float:left; margin:0; padding:0;}
 #topbar ul{float:right; margin:0; padding:0; list-style:none;}
 #topbar li{display:inline; margin:0 8px 0 0; padding:0 10px 0 0; border-right:1px solid #FFFFFF;}
-#topbar li.last{margin-right:0; padding-right:0; border:none;}
+#topbar li.last{margin-right:auto; padding-right:0; border:1px;}
 
 /* ----------------------------------------------Header------------------------------------- */
 
@@ -200,11 +201,11 @@ font-family:sourcesans-light;
 #topnav ul ul a{width:140px;}
 #topnav li:hover ul{left:auto;}
 #topnav li:hover{position:static;}
-#topnav li.last{margin-right:0;}
+#topnav li.last{margin-right:auto;}
 
 #featured_content, #featured_content ul{display:block; width:850px; height:138px; margin:0; padding:0; list-style:none; overflow:hidden;}
 #featured_content li{display:block; position:relative; float:left; width:150px; height:130px; margin:0 15px 0 0; padding:3px; color:#999999; background-color:#232323; border:1px solid #494949; overflow:hidden;}
-#featured_content li.last{margin-right:0;}
+#featured_content li.last{margin-right:auto;}
 
 
 #featured_content img{display:block; width:150px; height:130px;}

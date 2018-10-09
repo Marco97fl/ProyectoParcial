@@ -44,6 +44,7 @@
 </script>
 
 
+
 <script type="text/javascript">
   function nocturno() {
     if(document.getElementById("cbox").checked){
@@ -163,6 +164,9 @@
 }  
 </script>
 
+<script type="text/javascript" src="{% static 'admin/js/main.js' %}"></script>
+
+
 <script type="text/javascript">
 
 <!-- Google +1 -->
@@ -200,14 +204,14 @@ window.___gcfg = {lang: 'es'};
     <br class="clear" />
   </div>
 </div>
-
+ 
 <div class="wrapper col2">
   <div id="header">
-    <div class="fl_left">
-      <h2><a href="{% url 'home' %}">DomoArduino</a></h2>
-      <p id="es  n"><b>Domotica a un par de clicks</b></p>
+    <div id="cent" class="fl_left">
+      <h2><a id="cen" href="{% url 'home' %}">DomoArduino</a></h2>
+      <p id="eslogan"><b>Domotica a un par de clicks</b></p>
     </div>
-    <div class="fl_right"> <a href="{% url 'home' %}"><img src="{% static 'admin/img/logo_oficial.png' %}" width="111" alt="" /></a> </div>
+    <div class="fl_right"> <a id="ce" href="{% url 'home' %}"><img src="{% static 'admin/img/logo_oficial.png' %}" width="111" alt="" /></a> </div>
     <br class="clear" />
   </div>
 </div>
@@ -239,6 +243,7 @@ window.___gcfg = {lang: 'es'};
       
       <li><a class="menu" href="{% url 'contactanos' %}"><i class="fas fa-users"></i>  Contactanos</a></li>
       <li class="last"><a class="menu" href="{% url 'encuesta' %}"><i class="fas fa-users"></i> Encuesta</a></li>
+       <li class="last"><a class="menu" href="{% url 'precios' %}"><i class="fas fa-users"></i> Precios</a></li>
     </ul>
     <br class="clear" />
   </div>
@@ -295,6 +300,7 @@ window.___gcfg = {lang: 'es'};
 </div>
 -->  
   </div>
+</div>
 {% endblock %}
 
  {% block redesSociales %}
@@ -308,6 +314,7 @@ window.___gcfg = {lang: 'es'};
 
 
 <div id="fc" class="fb-like" data-href="http://domoarduino.herokuapp.com/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+
    <label id="lc" class="lis">Lista de Comentarios</label>
 
    <div class="fb-comments" data-href="https://www.domoarduino.herokuapp.com/docs/plugins/comments#configurator" data-width="100%" data-numposts="5">
@@ -339,10 +346,10 @@ window.___gcfg = {lang: 'es'};
       </section>
       <section id="redes-s">
         <h3 class="est"> Siguenos en redes sociales</h3>
-        <div class="fori" ><a href="https://www.facebook.com/domoarduino" target="_blank"><img src="{% static 'admin/img/f.ico' %}"  width="40" alt=""></a></div>
-        <div class="fori" > <a href=""><img src="{% static 'admin/img/w.ico' %}"  width="40" alt=""></a></div>
-        <div class="fori"><a href=""><img src="{% static 'admin/img/t.ico' %}"  width="40" alt=""></a></div>
-        <div class="fori"><a href=""><img src="{% static 'admin/img/y.ico' %}"  width="50" alt=""></a></div>
+        <div class="fori" ><a href="https://www.facebook.com/domoarduino" target="_blank"><img src="{% static 'admin/img/logofacebook.ico' %}"  width="40" alt="logo facebook"></a></div>
+        <div class="fori"><a href="https://twitter.com/domoarduino"><img src="{% static 'admin/img/t.ico' %}"  width="40" alt="logo twitter"></a></div>
+        <div class="fori" ><a href="https://instagram.com/domoarduino" target="_blank"><img src="{% static 'admin/img/logo_instagram.ico' %}"  width="40" alt="logo instagram"></a></div>
+
       </section>
     <br class="clear" />
   </div>

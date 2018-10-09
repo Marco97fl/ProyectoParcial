@@ -13,15 +13,16 @@ div.wrapper{display:block; width:100%; margin:0; text-align:justify;}
 div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, div.wrapper h6{margin:0 0 15px 0; padding:0; font-size:20px; font-weight:normal; font-family:Georgia, "Times New Roman", Times, serif;}
 .col1, .col1 a{color:#FFFFFF; background-color:#333335;}
 .col2{color:#FFFFFF; }
-.col3{color:#999999; border-bottom:1px solid #D51D29;}
+.col3{color:#999999; }
 .col4{color:black; border-bottom:1px solid #D51D29;background-color:#00ff8a;}
 .col4 a{color:#FFFFFF; background-color:#232323;}
 .col5{color:#666666; background-color:#FFFFFF;}
 .col5 a{color:#D51D29; background-color:#FFFFFF;}
-.col6{color:#98989A; background-color:#2D2B2B; border-top:1px solid #D51D29;}
+.col6{color:#98989A; background-color:#2D2B2B; border-top:1px solid #D51D29; width: 100%;}
 .col6 a{color:#CCCCCC; background-color:#2D2B2B;}
 .col7, .col7 a{color:#605B5B; background-color:#333333;}
-.col8{color:#98989A; background-color:skyblue; border-top:1px solid #D51D29;}
+.col7{width: 100%;}
+.col8{color:#98989A; background-color:skyblue; border-top:1px solid #D51D29; width: 100%;}
 /* ----------------------------------------------Generalise------------------------------------- */
 
 #topbar, #header, #topnav, #intro, #breadcrumb, #container, #footer, #copyright
@@ -40,7 +41,7 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 #header{padding:20px 0;background: #2981cf}
 #header h1, #header p{margin:0; padding:0;}
 #header .fl_left{display:block; float:left; width:400px;}
-#header .fl_right{display:block; float:right; width:468px;}
+#header .fl_right{display:block; }
 #header h1{margin:0; font-size:36px; border:none;}
 #header h2 a{ font-size: calc(1.1em + 0.9vw);
   font-weight: 700;
@@ -52,8 +53,8 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
   font-style: italic;
   font-size: 25px;
   color:#0d0d0d;
-  text-align: center;
  }
+
 
 
 /* ----------------------------------------------Content------------------------------------- */
@@ -115,10 +116,10 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 
 
 .formulario{
+  width: 600px;
     font-size: 16px;
     color: #001F3F;
-    margin-bottom: 20px;
-    margin-left: 20px;
+    margin: auto;
     border-style: groove;
     background-color: HoneyDew  ;}
 .entradasTexto {
@@ -145,6 +146,7 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
     padding-right: 210px;
     padding-bottom: 2px;
     padding-left: 210px;
+    margin: auto;
 }
 .b{
     text-align: center;
@@ -152,8 +154,67 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 #cc{
       border-top:1px solid #1e1e1e;
 }
- 
+ #hh{
+    width: 120px;
 
+ }
+
+docxml{
+
+}
+cuerpo{
+  display: block;
+    font-size: 20px;
+    text-indent: 10px;
+    background: #212f3c;
+    color: white;
+    margin-left: 97px;
+    margin-right: 96px;
+}
+
+tem{
+color: #c51031;
+font-size: 38px;
+text-align: center;
+display: block;
+}
+
+DescripcionS{
+  display: block;
+  font-size: 20px;
+  padding: 10px;
+}
+
+
+separador{
+  display: block;
+  color: #212f3c;
+}
+servicio{
+
+}
+nombre{
+  display: table-row;
+  background:#176dba;
+}
+descripcion,detalle{
+display: table-cell;
+}
+componentes{
+  display: table-row;
+}
+confort{
+display: table-cell;
+}
+seguridad{
+  display: table-cell;
+}
+ti{
+  display: table-row;
+}
+precio{
+  display: table-row;
+}
 
 
 /* ----------------------------------------------Footer------------------------------------- */

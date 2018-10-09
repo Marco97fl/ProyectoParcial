@@ -32,7 +32,9 @@ urlpatterns = [
     path('arduinoComponentes/', views.componentes.as_view(), name='componentes'),
     path('seguridadBase/', views.seguridadB.as_view(), name='seguridadB'),
     path('servidorBase/', views.servidorB.as_view(), name='servidorB'),
+    path('xml/', views.Precios.as_view(), name='precios'),
     path('Encuesta/', views.encuesta.as_view(), name='encuesta'),
+     path('Precios/', views.Precios.as_view(), name='precios'),
     url(r'^robots.txt$', TemplateView.as_view(template_name="robots.txt", content_type="text/plain"), name="robots_file"),
     url(r'^sitemap.xml$', TemplateView.as_view(template_name="sitemap.xml", content_type="xml"), name="sitemap_file"),
 ]

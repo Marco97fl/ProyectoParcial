@@ -5,19 +5,21 @@
 {% block content %}
 <div class="wrapper col5">
   <div id="container">
-    <div>
-		<h1>
+    <div itemscope itemtype="http://schema.org/ScholarlyArticle">
+		<h1 itemprop="name">
 			Control de acceso mediante RFID y estados por voz</h1>
 		<p>	
 			Esta última parte del proyecto se divide por un lado lo que sería la identificación por radiofrecuencia y por otro el módulo de voz. Esta es la parte del montaje de identificación por radiofrecuencia, en la cual hemos utilizado los siguientes materiales:			
-			<ul>
-				<li>Un arduino mega</li>
-				<li>Un módulo RFID</li>
-				<li>Un sensor pir para simular la detención d la puerta de acceso a la casa</li>
-				<li>Módulo de voz Somo 14-d</li>
-				<li>Arduino uno</li>	
-				<li>Altavoz 1w y 8 hom</li>	
-			</ul>
+			<div itemscope itemtype="http://schema.org/ItemList">
+				<ul>
+					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">Un arduino mega</li>
+					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">Un módulo RFID</li>
+					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">Un sensor pir para simular la detención d la puerta de acceso a la casa</li>
+					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">Módulo de voz Somo 14-d</li>
+					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">Arduino uno</li>	
+					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">Altavoz 1w y 8 hom</li>	
+				</ul>
+			</div>
 			El Arduino mega junto con el módulo de voz lo colocaremos en la caja de
 			telecomunicaciones donde se encuentran los relés del servidor creado</p>
 		
@@ -31,7 +33,7 @@
 			Irían instalados dentro de la caja de telecomunicaciones como ya se ha mencionado.
 		</p>
 
-		<img src="{% static 'admin/img/dom.jpg' %}"  width="700" alt="tablet de control">		
+		<img itemprop="image" src="{% static 'admin/img/dom.jpg' %}"  width="700" alt="tablet de control">		
 		<p>
 			Por otro lado tenemos el detector de RFID que se colocara en el lugar del interruptor de la
 			entrada , el cual se va a desplazar a otro lugar partiendo el mecanismo .</p>	
@@ -42,14 +44,14 @@
 			de RFID para no tener problemas cuando nos identifiquemos.
 			Solo quedaría conectar el Pir que iría en este lugar para solo hacer que actué cuando se abra la puerta y la alarma este armada</p>	
 
-		<img src="{% static 'admin/img/seguridad/3.PNG' %}"  width="700" alt="el interruptor">	
+		<img itemprop="image" src="{% static 'admin/img/seguridad/3.PNG' %}"  width="700" alt="el interruptor">	
 		<p>
 			Y por último nos quedaría solo la instalación del altavoz que como se puede apreciar en la captura, es un altavoz empotrable para techo que iría ubicado en la entrada a la vivienda.</p>
 		<img src="{% static 'admin/img/seguridad/4.PNG' %}"  width="700" alt="el altavoz">				
 		<hr/>
 		
 		<h2>Esquema de montaje</h2>
-		<img src="{% static 'admin/img/seguridad/5.PNG' %}"  width="700" alt="Esquema de montaje">	
+		<img itemprop="image" src="{% static 'admin/img/seguridad/5.PNG' %}"  width="700" alt="Esquema de montaje">	
 		</div>
 		<br class="clear" />
 	</div>

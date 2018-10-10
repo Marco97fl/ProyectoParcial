@@ -21,7 +21,7 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^prueba/', include('arduino.urls', namespace="basehtml")),
+    #url(r'^prueba/', include('arduino.urls', namespace="basehtml")),
     #path('', views.Vista, name='base'),
     path('', views.Inicio.as_view(), name='home'),
     path('confort/', views.ConfortView.as_view(), name='confort_diego'),

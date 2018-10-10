@@ -4,9 +4,9 @@
 {% block content %}
 <div class="wrapper col5">
   <div id="container">
-    <div>
+    <div itemscope itemtype="http://schema.org/ScholarlyArticle">
     	<hr/>
-		<h2 color="black" align="center">Servidor Web</h2>
+		<h2 itemprop="name" color="black" align="center">Servidor Web</h2>
 		
 		<hr/>
 		
@@ -31,9 +31,10 @@
 			que está limitado por la energía acumulada en los condensadores de la placa.
 		</p>
 		<br>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/YrxGIJNO4yA" frameborder="10" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		<br>
-		
+		<div itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/YrxGIJNO4yA" frameborder="10" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<br>
+		</div>
 		</div>
 		<br class="clear" />
 	</div>

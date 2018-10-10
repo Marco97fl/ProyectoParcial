@@ -5,33 +5,35 @@
 {% block content %}
 <div class="wrapper col5">
   <div id="container">
-    <div>
-		<h1>Confort en casa domotica
+    <div itemscope itemtype="http://schema.org/ScholarlyArticle">
+		<h1 itemprop="name">Confort en casa domotica
 			</h1>
 		<h2>Control de nivel de llenado del tanque  y nivel de sal descalcificadora
 																					</h2>
 		<hr/>
 		<p>		
-			Los componentes que se han utilizado son:		
-			<ul>
-				<li>Arduino uno con su módulo de expansión para poder atornillar el cableado</li>
-				<li>Modulo de 2 relés</li>
-				<li>Electroválvula para el corte del llenado del tanque</li>
-				<li>Transformador de 12v para la alimentación del arduino</li>
-				<li>Sensor de ultrasonidos</li>	
-				<li>Sensor de humedad aunque en el montaje real se sustituyó por un sensor de rebose</li>	
-				<li>Fuente de alimentación conmutada 24v cc para alimentar la electroválvula</li>	
-				<li>Electroválvula 24v cc</li>	
-				<li>Cable multifilar apantallado</li>	
-				<li>3 cajas estancas de superficie y una placa multiperforadora</li>
-				<li>Una pantalla lcd</li>	
-				<li>Un potenciómetro para regular la intensidad de la pantalla</li>	
-				<li>Un pulsador para activar la bomba de agua para poder evacuarla del tanque</li>	
+			Los componentes que se han utilizado son:
+			<div itemscope itemtype="http://schema.org/ItemList">	
+				<ul>
+					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">Arduino uno con su módulo de expansión para poder atornillar el cableado</li>
+					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">Modulo de 2 relés</li>
+					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">Electroválvula para el corte del llenado del tanque</li>
+					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">Transformador de 12v para la alimentación del arduino</li>
+					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">Sensor de ultrasonidos</li>	
+					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">Sensor de humedad aunque en el montaje real se sustituyó por un sensor de rebose</li>	
+					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">Fuente de alimentación conmutada 24v cc para alimentar la electroválvula</li>	
+					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">Electroválvula 24v cc</li>	
+					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">Cable multifilar apantallado</li>	
+					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">3 cajas estancas de superficie y una placa multiperforadora</li>
+					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">Una pantalla lcd</li>	
+					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">Un potenciómetro para regular la intensidad de la pantalla</li>	
+					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">Un pulsador para activar la bomba de agua para poder evacuarla del tanque</li>	
 
 
-			</ul>
+				</ul>
+			</div>	
 			este es el aspecto del montaje funcionando</p>
-		<img src="{% static 'admin/img/1c.PNG' %}"  width="700" alt="control">	
+		<img itemprop="image" src="{% static 'admin/img/1c.PNG' %}"  width="700" alt="control">	
 		<p align="justify">		
 			Nuestro tipo de arquitectura es de tipo centralizada, como ya se comentó en el apartado de
 			tipología de arquitectura, esta es la instalación, en la que los elementos que vamos a
@@ -50,11 +52,11 @@
 			está conectado al arduino y cuando se pulse , este lo leerá y nos activara la bomba de agua
 			que tenemos introducida dentro del tanque , durante 1,45 min que es el tiempo que tarda
 			en llenarse una garrafa de agua de 25l con el caudal que nos da esta pequeña bomba.</p>	
-		<img src="{% static 'admin/img/2c.PNG' %}"  width="700" alt="control en la pared">			
+		<img itemprop="image" src="{% static 'admin/img/2c.PNG' %}"  width="700" alt="control en la pared">			
 		<p align="justify">
 			Aquí tenemos centralizada lo que seria la parte de potencia, donde tenemos la fuente de
 			alimentacion de 24v , para alimentar el rele de la electrovalvula ya que esta funciona a 24 v en cc.</p>	
-		<img src="{% static 'admin/img/3c.PNG' %}"  width="700" alt="control conectado a la energia">	
+		<img itemprop="image" src="{% static 'admin/img/3c.PNG' %}"  width="700" alt="control conectado a la energia">	
 		<p align="justify">
 			la electrovalvula por un lado conectada al filtro de osmosis y por el
 			otro a su rele.El otro rele es para la activacion de la bomba de agua y esta conecta a 230v el ac.Estos 2 reles claro esta, estan gobernados por la señal de arduino.
@@ -63,18 +65,18 @@
 			de la instalacion , se unificaron las mallas de los cables y
 			se llevaron a tierra o sea a la pared de la casa a traves del cable marron que se aprecia en la
 			siguiente imagen.</p>
-		<img src="{% static 'admin/img/4c.PNG' %}"  width="700" alt="control cerrado en la pared">				
+		<img itemprop="image" src="{% static 'admin/img/4c.PNG' %}"  width="700" alt="control cerrado en la pared">				
 		<p align="justify">
 			Aquí tendríamos el sensor de ultrasonidos conectado a la descalcificadora, el cual nos manda
 			la información al arduino midiendo la distancia desde donde se encuentra el y donde está
 			la sal , cuando esta distancia supera los 40 cm , el arduino nos imprimirá en la pantalla que
 			nos falta sal, como se aprecia en la captura anterior de la caja de la lcd..</p>
 		
-		<img src="{% static 'admin/img/5c.PNG' %}"  width="700" alt="conexiones del control en la casa">	
+		<img itemprop="image" src="{% static 'admin/img/5c.PNG' %}"  width="700" alt="conexiones del control en la casa">	
 		<hr/>
 		<h2>Esquema de montaje</h2>
 		<hr/>
-		<img src="{% static 'admin/img/6c.PNG' %}"  width="700" alt="mapa de la implementacion">	
+		<img itemprop="image" src="{% static 'admin/img/6c.PNG' %}"  width="700" alt="mapa de la implementacion">	
 		<hr/>
 
 
@@ -84,7 +86,7 @@
 			dispositivos a controlar, pues bien si lo que queremos es subir o bajar la persiana , basta
 			con presionar su circuito y desconectarlo para que la persiana se quede a la altura que
 			deseamos.</p>
-		<img src="{% static 'admin/img/7c.PNG' %}"  width="350" alt="interfas de control">	
+		<img itemprop="image" src="{% static 'admin/img/7c.PNG' %}"  width="350" alt="interfas de control">	
 		<hr/>
 		<h2>Control de iluminacion</h2>
 		<hr/>
@@ -92,7 +94,7 @@
 			dispositivos a controlar, pues bien si lo que queremos es encender o apagar las luces, basta
 			con presionar su circuito y desconectarlo para que la luz cambie de estado
 																						.</p>
-		<img src="{% static 'admin/img/8c.PNG' %}"  width="350" alt="interfas del circuito">	
+		<img itemprop="image" src="{% static 'admin/img/8c.PNG' %}"  width="350" alt="interfas del circuito">	
 
 		<hr/>
 		<h2>Control de Aire acondicionado</h2>
@@ -101,7 +103,7 @@
 			acondicionado solo lo podemos gobernar para encenderlo y apagarlo no para cambiar de
 			modo , velocidad etc, esto se debe a que solo actuamos sobre la tensión que lo alimenta 
 																						.</p>
-		<img src="{% static 'admin/img/9c.PNG' %}"  width="350" alt="interfas del circuito encendido">		
+		<img itemprop="image" src="{% static 'admin/img/9c.PNG' %}"  width="350" alt="interfas del circuito encendido">		
 		</div>
 		<br class="clear" />
 	</div>

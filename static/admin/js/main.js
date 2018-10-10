@@ -1,4 +1,6 @@
 function nocturno() {
+  /*var d = new Date();
+  d.getHours();*/
     if(document.getElementById("cbox").checked){
         //document.getElementsByTagName("body")[0].style.backgroundColor = "#212f3c";
         document.getElementsByTagName("body")[0].background = "/static/admin/img/nocturno2.jpg";
@@ -83,36 +85,59 @@ function nocturno() {
         arrayFab[2].style.backgroundColor = "#fff";
    }
        
-   if (window.location.pathname == "/contactanos/") {
-  
+}
+
+
+function validar(){
+  var good = 0;
     var nombre = document.getElementById("nombre");
     var apellidos = document.getElementById("apellidos");
     var email = document.getElementById("email");
-    email.addEventListener("input",validar,false);
-    nombre.addEventListener("input",validar,false);
-    apellidos.addEventListener("input",validar,false);
-    validar();
-   function validar(){
-    if (nombre.value=="" && apellidos.value=="") {
-      nombre.setCustomValidity("Introduce nombre o apellido");
+    var asunto = document.getElementById("asunto");
+    var cuerpo = document.getElementById("cuerpo");
+    var valNomAp = /^([a-zA-Z_]{2,15} [a-zA-Z_]{2,15})$/;
+    var valEmail = /^(\w+@[a-zA-Z_]+?\.[a-zA-Z_]{2,6})$/;
+    if (!valNomAp.test(nombre.value)) {
       nombre.style.background="#FFDDDD";
-      apellidos.style.background="#FFDDDD";
     }else{
-      nombre.setCustomValidity("");
       nombre.style.background="#FFFFFF";
-      apellidos.style.background="#FFFFFF";
-
+      good = good + 1;
     }
 
-    if(email.value==""){
-      email.setCustomValidity("Introduce tu email para poder corresponder.");
-      email.style.background="#FFDDDD";
+    if (!valNomAp.test(apellidos.value)) {
+      apellidos.style.background="#FFDDDD";
+  
     }else{
-      email.setCustomValidity("");
-      email.style.background="#FFFFFF";
+      apellidos.style.background="#FFFFFF";
+      good = good + 1;
     }
 
-   
+    if(!valEmail.test(email.value)){
+      email.style.background="#FFDDDD";
+      
+    }else{
+      email.style.background="#FFFFFF";
+      good = good + 1;
+    }
+
+    if(asunto.value==""){
+      asunto.style.background="#FFDDDD";
+      
+    }else{
+      asunto.style.background="#FFFFFF";
+      good = good + 1;
+    }
+
+    if(cuerpo.value==""){
+      cuerpo.style.background="#FFDDDD";
+      
+    }else{
+      cuerpo.style.background="#FFFFFF";
+      good = good + 1;
+    }
+    
+   if (good == 5) {
+    alert("Su mensaje fue enviado con exito!");
+     document.getElementById("form_contactanos").reset();
+   }
   }
-}
-}  

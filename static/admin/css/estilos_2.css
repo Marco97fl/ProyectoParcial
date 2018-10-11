@@ -3,20 +3,20 @@
 
 
 html{overflow-y:scroll;}
-body{margin:0; padding:0; font-size:16px; font-family:verdana, Arial, Helvetica, sans-serif; color:#212f3c; background:url({% static 'admin/img/logo_oficial.png %}');}
+body{margin:0; padding:0; font-size:19px; font-family:Georgia, 'Times New Roman', serif; color:#212f3c; background:url({% static 'admin/img/logo_oficial.png %}');}
 
 br.clear{clear:both; margin-top:-15px;}
 
 /* ----------------------------------------------Wrapper------------------------------------- */
 
-div.wrapper{display:block; width:100%; margin:0; text-align:justify;}
-div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, div.wrapper h6{margin:0 0 15px 0; padding:0; font-size:20px; font-weight:normal; font-family:Georgia, "Times New Roman", Times, serif;}
-.col1, .col1 a{color:#FFFFFF; background-color:#333335;}
+div.wrapper{display:block; width:100%; margin:0; text-align:center;}
+div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, div.wrapper h6{margin:0 0 15px 0; padding:0; font-size:26px; font-weight:normal; font-family:Georgia, "Times New Roman", Times, serif;}
+.col1, .col1 a{color:#FFFFFF; background-color:#00004d;}
 .col2{color:#FFFFFF; }
 .col3{color:#999999; }
 .col4{color:black; border-bottom:1px solid #D51D29;background-color:#00ff8a;}
 .col4 a{color:#FFFFFF; background-color:#232323;}
-.col5{color:#666666; background-color:#FFFFFF;}
+.col5{color:#000099; background-color:#e6e6e6;}
 .col5 a{color:#D51D29; background-color:#FFFFFF;}
 .col6{color:#98989A; background-color:#2D2B2B; border-top:1px solid #D51D29; width: 100%;}
 .col6 a{color:#CCCCCC; background-color:#2D2B2B;}
@@ -26,7 +26,7 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 /* ----------------------------------------------Generalise------------------------------------- */
 
 #topbar, #header, #topnav, #intro, #breadcrumb, #container, #footer, #copyright
-{display:block; position:relative; width:1095px; margin: auto;}
+{display:block; position:relative; width:100%; margin: auto;}
 
 /* ----------------------------------------------TopBar------------------------------------- */
 
@@ -222,7 +222,7 @@ precio{
 
 
 footer section {
-  width:405px;
+  width:425px;
   float:left;
   padding:10px;
   display: inline;
@@ -271,9 +271,9 @@ font-family:sourcesans-light;
 #copyright p a{margin:0; padding:0; color:#fff;text-align: center;}
 
 
-#topnav{padding:15px 0; z-index:1000;background: #0c4883}
-#topnav ul, #topnav li{background: #1564b3; margin:0; padding:0; list-style:none; font-size:17px; font-family:Georgia, "Times New Roman", Times, serif;}
-#topnav li{float:left; margin-right:30px;}
+#topnav{padding:15px 0; z-index:1000;background: #333300}
+#topnav ul, #topnav li{background: #1564b3; margin:0; padding:0; list-style:none; font-size:16px; font-family:Georgia, "Times New Roman", Times, serif;}
+#topnav li{float:left; margin-right:40px;}
 #topnav li li{margin-right:0;}
 #topnav li span{display:block; font-size:12px; font-weight:bold; font-family:Arial, Helvetica, sans-serif; text-transform:lowercase; color:#999999; background-color:#1564b3; font-weight:normal; line-height:normal; margin:0; padding:0;}
 #topnav li a:link, #topnav li a:visited, #topnav li a:hover{display:block; margin:0; padding:0; color:#FFFFFF; background-color:#0c4883; text-transform:uppercase; font-weight:bold;}

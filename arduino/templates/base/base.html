@@ -36,7 +36,7 @@
 <link rel="icon" type="image/png" href="{% static 'admin/img/logo_oficial.ico' %}"/>  
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <link rel="stylesheet" href="{% static 'admin/css/estilos.css' %}">
-
+<link rel="alternate stylesheet" title="estilo secundario" href="{% static 'admin/css/estilos_2.css' %}" />
 <!--Esto es para el registro en el google analytics-->
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127082224-1"></script>
@@ -186,8 +186,9 @@ window.___gcfg = {lang: 'es'};
 
 {% endblock %}
 </head>
-<body oncontextmenu="return false" id="top" language=JavaScript onLoad="nocturno()">
-
+<!--<body oncontextmenu="return false" id="top" language=JavaScript onLoad="nocturno()">
+-->
+<body>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -247,7 +248,7 @@ window.___gcfg = {lang: 'es'};
         </ul>
       
       <li><a class="menu" href="{% url 'contactanos' %}"><i class="fas fa-users"></i>  Contactanos</a></li>
-      <li class="last"><a class="menu" href="{% url 'encuesta' %}"><i class="fas fa-users"></i> Encuesta</a></li>
+      <li><a class="menu" href="{% url 'encuesta' %}"><i class="fas fa-users"></i> Encuesta</a></li>
        <li class="last"><a class="menu" href="{% url 'precios' %}"><i class="fas fa-users"></i> Precios</a></li>
     </ul>
     <br class="clear" />
